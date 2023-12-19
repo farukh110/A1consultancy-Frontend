@@ -1,22 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react';
 import './index.scss';
 
 const InnerServices = () => {
-
-    useEffect(() => {
-        const cursor = document.querySelector(".custom-cursor");
-
-        const handleMouseMove = ({ pageY: Y, pageX: X }) => {
-            cursor.style.top = `${Y}px`;
-            cursor.style.left = `${X}px`;
-        };
-
-        window.addEventListener("mousemove", handleMouseMove);
-
-        return () => {
-            window.removeEventListener("mousemove", handleMouseMove);
-        };
-    }, []);
 
     return (
         <>
