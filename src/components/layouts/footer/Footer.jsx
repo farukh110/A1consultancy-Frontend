@@ -62,7 +62,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-2 my-2">
+                    <div className="row row-cols-1 align-items-center justify-content-between row-cols-sm-2 row-cols-md-5 py-2 my-2">
                         <div className="col-md-3 mb-3">
                             <span className="social-media-text ms-2">Follow Us On</span>
                             <ul className="list-unstyled d-flex social-media-icons">
@@ -116,30 +116,14 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-md-5 col-sm-12 mb-3 d-inline-flex">
-                            <div className="row">
-                                <div className="col-md-10">
-                                    <p className="footer-note">
-                                        The information on this website cannot be commercially used
-                                        without the prior consent of A1 Consultancy.
-                                    </p>
-                                </div>
-                                <div className="col-md-10">
-                                    <p className="copyright">
-                                        © 2023 A1 Consultancy. All Rights Reserved.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 mb-3 col-sm-12 d-inline-flex">
-                            <p className="footer-note" />
-                            <p className="footer-note mb-md-0 mb-0">
-                                Third-party logos displayed on the website are not owned by us, and
-                                are displayed only for representation purpose. The ownership and
-                                copyright of Logos belong to their respective organizations.
+                        <div className="col-md-6 col-sm-12 mb-3 align-items-end">
+
+                            <p className="copyright text-right mb-0">
+                                © 2023 A1 Consultancy. All Rights Reserved.
                             </p>
-                            <p />
+
                         </div>
+
                     </div>
                 </div>
             </section>
