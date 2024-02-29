@@ -16,16 +16,8 @@ const Footer = () => {
                             />
                         </a>
                         <ul className="nav footer-nav col-md-9 justify-content-start">
-                            <li className="nav-item">
-                                <a href="/sitemap.php" className="nav-link px-2">
-                                    Sitemap
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="/customer-testimonials.php" className="nav-link px-2">
-                                    Testimonials
-                                </a>
-                            </li>
+
+
                             <li className="nav-item">
                                 <a href="/success-stories/" className="nav-link px-2">
                                     Success Stories
@@ -42,11 +34,7 @@ const Footer = () => {
                                     Resources
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a href="/infographics/" className="nav-link px-2">
-                                    Infographics
-                                </a>
-                            </li>
+
                             <li className="nav-item">
                                 <a href="/videos.php" className="nav-link px-2">
                                     Videos
@@ -62,21 +50,7 @@ const Footer = () => {
                                     Careers
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a href="/forms/partners.php#top" className="nav-link px-2">
-                                    Partners
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="/terms-of-use.php" className="nav-link px-2">
-                                    Terms of Use
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="/privacy.php" className="nav-link px-2">
-                                    Privacy Statement
-                                </a>
-                            </li>
+
                             <li className="nav-item">
                                 <a
                                     href="/forms/contactform.php?#top"
