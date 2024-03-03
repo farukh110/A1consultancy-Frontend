@@ -92,7 +92,7 @@ const Services = () => {
                                         <List.Item.Meta
                                             key={index}
                                             avatar={<Avatar src={checkedIcon} />}
-                                            title={<h4>{item.title}</h4>}
+                                            title={item.title}
                                         />
                                     </List.Item>
                                 )}

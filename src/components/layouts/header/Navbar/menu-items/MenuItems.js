@@ -1,7 +1,7 @@
 const menuItems = [
     {
         title: "Home",
-        url: "#",
+        url: "/",
         cName: "nav-links"
     },
     {
@@ -11,12 +11,12 @@ const menuItems = [
     },
     {
         title: "Products",
-        url: "#",
+        url: "/products",
         cName: "nav-links"
     },
     {
         title: "Contact",
-        url: "#",
+        url: "/contact",
         cName: "nav-links"
     }
 ];

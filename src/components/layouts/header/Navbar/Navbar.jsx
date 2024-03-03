@@ -4,6 +4,7 @@ import './index.scss';
 // import Button from "../../../controls/button/Button";
 import logo from '../../../../assets/logo/logo.jpg';
 import { slide as Menu } from 'react-burger-menu';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -80,9 +81,24 @@ const Navbar = () => {
                 {menuItems.map((item, index) => {
                     return (
                         <li key={index}>
-                            <a href={item.url} className={item.cName}>
-                                {item.title}
-                            </a>
+                            {item.title === "Services" ? (
+                                <div className="dropdown">
+                                    <a href={item.url} className={item.cName + " dropdown-toggle"} role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        {item.title}
+                                    </a>
+                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <Link to='/web-development' className="dropdown-item text-capitalize">Web Development</Link>
+                                        <Link to='/digital-marketing' className="dropdown-item text-capitalize">digital marketing</Link>
+                                        <Link to='/contact-center-services' className="dropdown-item text-capitalize">Contact Center Services</Link>
+                                        <Link to='/back-office-services' className="dropdown-item text-capitalize">Back Office Services</Link>
+                                        <Link to='/video-monitoring-surveillance' className="dropdown-item text-capitalize">Video Monitoring Surveillance</Link>
+                                    </div>
+                                </div>
+                            ) : (
+                                <Link to={item.url} className={item.cName}>
+                                    {item.title}
+                                </Link>
+                            )}
                         </li>
                     );
                 })}

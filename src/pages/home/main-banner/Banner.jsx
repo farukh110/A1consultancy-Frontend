@@ -2,10 +2,13 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import banner from '../../../assets/images/banner.jpg';
+// import banner from '../../../assets/images/banner.jpg';
 import './index.scss';
 
-const Banner = () => {
+const Banner = (props) => {
+
+    let { bannerImage, mediumText, mediumBelowText, bannerContent } = props;
+
     return (
         <>
             {/* slider-start */}
@@ -14,7 +17,7 @@ const Banner = () => {
                     <div
                         className="single-slider slider-height d-flex align-items-center justify-content-center"
                         style={{
-                            backgroundImage: `url(${banner})`
+                            backgroundImage: `url(${bannerImage})`
                         }}
                     >
                         <div className="container">
@@ -26,16 +29,12 @@ const Banner = () => {
                                             data-animation="fadeInUp"
                                             data-delay=".2s"
                                         >
-                                            <span>we prioritize your goals as our own to guarantee
-                                                ongoing success.</span>
+                                            <span>{mediumText}</span>
                                             <br />
-                                            Let us bring our enthusiastic expertise to help your
-                                            business thrive.
+                                            {mediumBelowText}
                                         </h1>
                                         <p data-animation="fadeInUp" data-delay=".4s">
-                                            Are you in need of ready-to-go solutions? Don't fret over this! Our team is
-                                            here to assist you in ensuring efficient delivery while saving you time and
-                                            costs.
+                                            {bannerContent}
                                         </p>
                                         {/* <button
                                             className="theme-btn"
