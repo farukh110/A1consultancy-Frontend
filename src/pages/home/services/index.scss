@@ -1,22 +1,24 @@
+$mediumBlack: #121212;
+
 .content {
 
     h5 {
-        color: #ea6018;
-        font-size: 20px;
+        color: $mediumBlack;
+        font-size: 50px;
         font-weight: 600;
     }
 
     .raven-heading1 {
-        color: #121212;
+        color: $mediumBlack;
         font-size: 55px;
         font-weight: 700;
 
         span {
-            color: #db2707;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
-            background-image: linear-gradient(90deg, #db2707 0%, #f88d01 100%);
+            color: $mediumBlack;
+            // -webkit-text-fill-color: transparent;
+            // background-clip: text;
+            // -webkit-background-clip: text;
+            // background-image: linear-gradient(90deg, #db2707 0%, #f88d01 100%);
         }
     }
 }
@@ -33,10 +35,23 @@
 }
 
 p {
-    text-align: center;
     color: #484848;
     font-size: 18px;
     font-weight: 400;
+}
+
+.custom-list {
+
+    .ant-list-item {
+
+        padding: 6px 0;
+        border-block-end: none;
+
+        h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0px;
+        }
+    }
 }
 
 @media (max-width: 480px) {

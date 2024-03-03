@@ -1,8 +1,50 @@
 import React from 'react'
 import './index.scss';
 import InnerServices from './innner-services/InnerServices';
+import { Avatar, List } from 'antd';
+import checkedIcon from '../../../assets/icons/icon.svg';
 
 const Services = () => {
+
+    const data = [
+        {
+            title: 'Use the latest tools and technologies',
+        },
+        {
+            title: 'Fully grasp your needs.',
+        },
+        {
+            title: 'Guaranteed to be 100% satisfied',
+        },
+        {
+            title: 'Affordable solutions.',
+        },
+        {
+            title: 'Coordinators communicated with promptness and effectiveness.',
+        },
+        {
+            title: 'Dedicated project managers provide personalized assistance.',
+        },
+        {
+            title: 'Timely completion of excellent work.',
+        },
+        {
+            title: 'Establishing lasting relationships with customers.',
+        },
+        {
+            title: 'Collaborating for your greatest possible advantage.',
+        },
+        {
+            title: 'Work together on winning designs and popular companies.',
+        },
+        {
+            title: 'Experience uniqueness, security, and customer service.',
+        },
+        {
+            title: 'Outstanding service that meets expectations.'
+        }
+    ];
+
     return (
         <>
             <div className='container py-md-5 py-4'>
@@ -13,52 +55,53 @@ const Services = () => {
 
                         <div className='col-md-10'>
 
-                            <h5>ALLOW</h5>
+                            <h5>WHY</h5>
 
-                            <h3 className='raven-heading1'>A1 Consultancy
-                                <span> to </span></h3>
+                            <h3 className='raven-heading1'>CHOOSE
+                                <span> US </span></h3>
 
                         </div>
 
                     </div>
 
-                    <h3 className="raven-heading raven-heading-h3 text-md-center text-left">
-                        <span className="raven-heading-title">
-                            <span className="raven-heading-title-inner elementor-inline-editing">
-                                Reinforce Your Organization’s Infrastructure
-                            </span>
-                        </span>
-                    </h3>
+                    <div className='row justify-content-center'>
 
-                    <p className='my-md-4'>Harness the transformative potential of Data and let it guide you to favorable outcomes with our business analytics</p>
+                        <div className='col-md-10'>
 
-                    <h3 className="raven-heading raven-heading-h3 text-md-center text-left">
-                        <span className="raven-heading-title">
-                            <span
-                                className="raven-heading-title-inner elementor-inline-editing"
-                                data-text="Maneuver & Oversee The Influx of Data"
-                                data-elementor-setting-key="title"
-                            >
-                                Maneuver &amp; Oversee The Influx of Data
-                            </span>
-                        </span>
-                    </h3>
+                            <h3 className="raven-heading raven-heading-h3 text-left">
+                                <span className="raven-heading-title">
+                                    <span className="raven-heading-title-inner elementor-inline-editing">
+                                        (Because Great ideas need a great platform to shine)
+                                    </span>
+                                </span>
+                            </h3>
 
-                    <p className='my-md-4'>An immersive experience that fuels fact-based decision making for the operational excellence of business models</p>
 
-                    <h3 className="raven-heading raven-heading-h3 text-md-center text-left">
-                        <span className="raven-heading-title">
-                            <span
-                                className="raven-heading-title-inner elementor-inline-editing"
-                                data-text="Stratify a Cloud-based Ecosystem"
-                                data-elementor-setting-key="title"
-                            >
-                                Stratify a Cloud-based Ecosystem
-                            </span>
-                        </span>
-                    </h3>
+                            <p className='my-md-4'>At A1 Consultancy, we're here to visually bring your ideas to life. Our expert
+                                teams handle complex problems with advanced digital solutions and a
+                                smooth process. We offer extensive services like web development, video
+                                monitoring, digital marketing, contact center, and back office services. Here's
+                                what sets us unique:</p>
 
-                    <p className='my-md-4'>Encourage Cloud-based reforms that streamline innovation and compliment the efficiency of your business’ output</p>
+                            <List
+                                itemLayout="horizontal"
+                                className='custom-list'
+                                dataSource={data}
+                                renderItem={(item, index) => (
+                                    <List.Item>
+                                        <List.Item.Meta
+                                            key={index}
+                                            avatar={<Avatar src={checkedIcon} />}
+                                            title={<h4>{item.title}</h4>}
+                                        />
+                                    </List.Item>
+                                )}
+                            />
+
+                        </div>
+
+                    </div>
+
 
                 </div>
 
