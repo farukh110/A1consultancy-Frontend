@@ -7,7 +7,7 @@ import './index.scss';
 
 const Banner = (props) => {
 
-    let { bannerImage, mediumText, mediumBelowText, bannerContent } = props;
+    let { bannerImage, mediumText, mediumBelowText, bannerContent, dynamicClass } = props;
 
     return (
         <>
@@ -29,7 +29,7 @@ const Banner = (props) => {
                                             data-animation="fadeInUp"
                                             data-delay=".2s"
                                         >
-                                            <span>{mediumText}</span>
+                                            <span style={{ fontSize: dynamicClass?.fontSize, color: dynamicClass?.color }}>{mediumText}</span>
                                             <br />
                                             {mediumBelowText}
                                         </h1>

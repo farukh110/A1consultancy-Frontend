@@ -68,8 +68,8 @@ const ContactForm = () => {
                                 <i className="fa-solid fa-phone-volume fa-2xl contact-email header-call-icon" />
                             </div>
                             <div className="flex-grow-1 ms-3">
-                                <a href="tel:800-514-7456" className="h3 text-decoration-none">
-                                    800-514-7456
+                                <a href="tel:123-456-7891" className="h3 text-decoration-none">
+                                    123-456-7891
                                 </a>
                             </div>
                         </div>
@@ -105,7 +105,7 @@ const ContactForm = () => {
                             <div className="flex-grow-1 ms-3">
                                 <h3>USA</h3>
                                 <p className="desc-sec mb-1 text-left">A1Consultancy</p>
-                                <p>116 Village Blvd, Suite 200, Princeton, NJ 08540</p>
+                                <p></p>
                                 <hr />
                             </div>
                         </div>

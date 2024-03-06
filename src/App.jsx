@@ -7,6 +7,7 @@ import Web from './pages/web-development/Web';
 import Digital from './pages/digital-marketing/Digital';
 import ContactCenter from './pages/contact-center/ContactCenter';
 import BackOffice from './pages/back-office/BackOffice';
+import VideoMonitoring from './pages/video-monitoring/VideoMonitoring';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route exact path="/digital-marketing" element={<Digital />} />
           <Route exact path="/contact-center-services" element={<ContactCenter />} />
           <Route exact path="/back-office-services" element={<BackOffice />} />
+          <Route exact path="/video-monitoring-surveillance" element={<VideoMonitoring />} />
         </Routes>
         <Footer />
       </div>

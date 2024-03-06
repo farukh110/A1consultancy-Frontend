@@ -4,13 +4,14 @@ import banner from '../../assets/images/inner-services/web-development.jpg';
 
 const Page = (props) => {
 
-    let { bannerImage, mediumText, mediumBelowText, bannerContent } = props;
+    let { bannerImage, mediumText, mediumBelowText, bannerContent, dynamicClass } = props;
 
     return (
         <div>
 
             <Banner
                 bannerImage={bannerImage}
+                dynamicClass={dynamicClass}
                 mediumText={mediumText}
                 mediumBelowText={mediumBelowText}
                 bannerContent={bannerContent}
