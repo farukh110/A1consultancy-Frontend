@@ -9,34 +9,40 @@ const Footer = () => {
                 <div className='custom-footer-padding py-5'>
 
                     <div className="container">
-                        <div className="row">
-                            <div className="col-md-3 col-sm-6">
+                        <div className="row justify-content-center">
+                            <div className="col-md-5 col-sm-6">
                                 <div className="address-box">
-                                    <h3 className="address-title">KDA (Head Office)</h3>
+                                    <h3 className="address-title">About Us</h3>
                                     <div className="address-info">
-                                        D7, Block F North Nazimabad Town, Karachi <br /> +92-330-7827276
+                                        Need ready-to-go solutions? Don't fret over this! Our team is here to assist you in ensuring efficient delivery while saving you time and costs. We are an energetic, youthful company with expertise in the most recent trends in the outsourcing industry.
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-3 col-sm-6">
                                 <div className="address-box">
-                                    <h3 className="address-title">Johar Branch </h3>
+                                    <h3 className="address-title">Other Menu </h3>
                                     <div className="address-info">
-                                        St # 3, Block 15 Gulistan-e-Johar, Karachi, 74000 <br />{" "}
-                                        +92-335-7827276{" "}
+                                        <ul className='ps-0'>
+                                            <li> Lead Generation </li>
+                                            <li> Digital Marketing </li>
+                                            <li> Contact Center </li>
+                                            <li> Inbound Calling </li>
+                                            <li> Outbound Calling </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-3 col-sm-6">
+                            <div className="col-md-4 col-sm-6">
                                 <div className="address-box">
-                                    <h3 className="address-title">Nazimabad Branch</h3>
+                                    <h3 className="address-title">Contact Details</h3>
                                     <div className="address-info">
-                                        Mezzanine Floor, Al Ghafoor Eden, Near Naya Urdu Bazaar, Block A,
-                                        Nazimabad no.1, Karachi, 74500 <br /> +92-336-7827276
+                                        Location: USA <br /> Email: Info@a1consultancy.com <br />
+                                        Phone: +123-456-7891
+
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-3 col-sm-6">
+                            {/* <div className="col-md-2 col-sm-6">
                                 <div className="address-box">
                                     <h3 className="address-title">North Karachi Branch</h3>
                                     <div className="address-info">
@@ -44,7 +50,7 @@ const Footer = () => {
                                         +92-331-7827276
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         {/* <div className="color-overlay1">
                             <img
@@ -80,7 +86,7 @@ const Footer = () => {
                                             <img
                                                 width={200}
                                                 height={115}
-                                                src="https://starbpo.com.pk/wp-content/uploads/2022/09/logo-1-2-300x115.png"
+                                                src={logo}
                                                 className="image wp-image-8078  attachment-medium size-medium"
                                                 alt=""
                                                 style={{ maxWidth: "100%", height: "auto" }}
@@ -167,7 +173,7 @@ const Footer = () => {
                                             <h3 className="widgettitle ">Contact Us</h3>{" "}
                                             <div className="textwidget">
                                                 <p>
-                                                    Cell : (+92)330-7827276 <br /> Email: careers@starbpo.com.pk
+                                                    Cell : +123-456-7891 <br /> Email: Info@a1consultancy.com
                                                 </p>{" "}
                                                 <p className="rtin-des" />
                                                 <ul className="corporate-address"></ul>
@@ -188,7 +194,7 @@ const Footer = () => {
                                             />
                                         </div>
                                         <div className="copyright text-center">
-                                            © 2024 Star BPO. All Rights Reserved by Web Modified
+                                            © 2024 A1Consultancy. All Rights Reserved.
                                         </div>
                                     </div>
                                 </div>
