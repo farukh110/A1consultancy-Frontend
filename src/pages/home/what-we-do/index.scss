@@ -1,0 +1,101 @@
+.what-we-do {
+
+    background-color: #F8F8F8;
+    background-image: url(https://starbpo.com.pk/wp-content/uploads/2021/11/figure32.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    .mission-vision-container {
+
+        margin-top: -100px;
+    }
+
+    .info-box {
+        position: relative;
+
+        .info-title {
+            font-size: 24px;
+            color: #000;
+            line-height: 30px;
+            font-weight: 600;
+        }
+    }
+
+    .info-style4 {
+
+        .info-item {
+            background-color: #fff;
+            box-shadow: 0px 7px 43px 0px rgba(0, 0, 0, 0.08);
+            padding: 40px 20px 40px 60px;
+            height: 370px;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 1px;
+                height: 100%;
+                background-color: #e5e5e5;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+            .info-title {
+                margin-top: 20px;
+                margin-bottom: 15px;
+            }
+
+            .info-content {
+
+                .icon-circle-image {
+                    position: relative;
+
+                    .hover-image {
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                        transition: all 0.3s ease-in-out;
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+
+                    .icon-small {
+
+                        background: #000;
+                        border-radius: 100%;
+                    }
+                }
+
+                .icon-image {
+                    position: absolute;
+                    left: 18px;
+                    top: 13px;
+                    filter: invert(1);
+
+                    img {
+                        width: 48px;
+                        height: 46px;
+                    }
+                }
+            }
+
+            p {
+                font-weight: 400;
+            }
+        }
+    }
+
+    .section-title {
+        font-size: 36px;
+        color: #000;
+        line-height: 44px;
+        font-weight: 700;
+    }
+
+    .inner-img {
+
+        background-image: url(https://starbpo.com.pk/wp-content/uploads/2021/11/figure29.png);
+        background-position: bottom left;
+        background-repeat: no-repeat;
+    }
+}

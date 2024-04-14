@@ -1,0 +1,30 @@
+.subtitle {
+    margin-bottom: 8px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    color: #dd9933;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0px 0px 10px 0;
+
+
+    .title-bar1 {
+        width: 15px;
+        height: 4px;
+        background-color: #ffa996;
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 12px;
+        border-radius: 10px;
+    }
+
+    .title-bar2 {
+        width: 34px;
+        height: 4px;
+        background-color: #fa360a;
+        display: inline-block;
+        border-radius: 10px;
+    }
+}
