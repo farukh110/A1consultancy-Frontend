@@ -3,3 +3,257 @@
     background-image: url(https://starbpo.com.pk/wp-content/uploads/2021/11/figure16.png);
     background-repeat: no-repeat;
 }
+
+.service-default {
+    visibility: visible;
+
+    &>.row {
+        justify-content: center;
+    }
+
+    .service-item {
+        .service-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+    }
+
+    .service-more-button {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &.service-layout1 {
+        .service-item {
+            box-shadow: none;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .service-default .service-item .service-title {
+        margin-bottom: 12px;
+    }
+
+    .service-default.service-layout1 .service-item {
+        box-shadow: 0 3px 17px rgb(0 0 0 / 15%);
+    }
+}
+
+@media (max-width: 991px) {
+    .service-grid-layout1 .service-item .service-box-content .service-content {
+        display: block;
+        padding: 30px;
+    }
+
+    .service-grid-layout1 .service-item .service-box-content .service-info {
+        margin-left: 0;
+    }
+
+    .service-grid-layout1 .service-item .service-box-content .service-content .service-img-wrap {
+        margin-bottom: 13px;
+    }
+}
+
+.service-default {
+    .service-item {
+        margin-bottom: 30px;
+    }
+}
+
+.service-grid-layout1 {
+    .service-item {
+        .service-box-content {
+            &.hide-button {
+                .service-content {
+                    align-items: center;
+                }
+            }
+
+            .service-content {
+                .service-img-wrap {
+                    .service-hover-img {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service-button1 {
+    .btn-style1 {
+        border: 1px solid #dfdfdf;
+        padding: 15px 30px 15px 30px;
+        display: inline-flex;
+        align-items: center;
+        color: #000;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1;
+        background-color: #fff;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        z-index: 5;
+
+        svg {
+            width: 19px;
+            height: 19px;
+        }
+
+        &:hover {
+            opacity: 0.9;
+
+            i {
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
+.service-grid-layout1 {
+    .service-item {
+        position: relative;
+        box-shadow: 0 10px 30px 0 rgb(0 0 0 / 20%);
+        z-index: 2;
+
+        .service-box-content {
+            .service-content {
+                display: flex;
+                padding: 50px 50px 50px 50px;
+                position: relative;
+                z-index: 11;
+
+                p {
+                    transition: all 0.3s ease-in-out;
+                    font-weight: 400;
+                }
+
+                .service-img-wrap {
+                    position: relative;
+                }
+
+                .icon {
+                    margin-top: 5px;
+
+                    i {
+                        font-size: 60px;
+                    }
+                }
+            }
+
+            .service-figure {
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                &::before {
+                    content: "";
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    background-color: #fff;
+                    opacity: 1;
+                    z-index: 5;
+                    transition: all 0.5s ease-in-out;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
+            }
+
+            .service-info {
+                flex: 1;
+                margin-left: 30px;
+            }
+        }
+
+        &:hover {
+            .service-box-content {
+                .service-content {
+                    p {
+                        color: #fff;
+                    }
+
+                    .service-img-wrap {
+                        .service-hover-img {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+
+                        .service-image {
+                            transition: all 0.3s ease-in-out;
+                            visibility: visible;
+                            opacity: 0;
+                        }
+                    }
+                }
+
+                .service-figure {
+                    &::before {
+                        background: none;
+                    }
+                }
+
+                .btn-style1 {
+                    background-color: #fa360a;
+                    border-color: #fa360a;
+                    color: #fff !important;
+
+                    svg {
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+
+            .service-title {
+                a {
+                    color: #fff;
+                }
+            }
+
+            .service-content {
+                .icon {
+                    i {
+                        color: #fff;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        .service-title {
+            a {
+                color: #000;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+.service-grid-layout1 .service-item:hover .service-box-content .btn-style1,
+.service-grid-layout1 .service-item:hover .service-box-content .btn-style1 i {
+    color: #fff;
+}
