@@ -7,6 +7,7 @@ import banner from '../../assets/images/banner.jpg';
 import MainSlider from '../../components/sliders/home-slider/MainSlider';
 import WhatWeDo from './what-we-do/WhatWeDo';
 import BpoServices from './bpo-services/BpoServices';
+import Events from './events/Events';
 
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
             {/* <Services /> */}
             <WhatWeDo />
             <BpoServices />
+            {/* <Events /> */}
             <ContactForm />
         </>
     )
