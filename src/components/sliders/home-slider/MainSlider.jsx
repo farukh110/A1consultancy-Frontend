@@ -2,6 +2,8 @@ import Slider from 'react-animated-slider';
 import "react-animated-slider/build/horizontal.css";
 import "normalize.css/normalize.css";
 import './slider-animations.scss';
+import b1 from '../../../assets/images/slider/b1.jpg';
+import b2 from '../../../assets/images/slider/b2.jpg';
 import './index.scss';
 
 const content = [
@@ -10,14 +12,14 @@ const content = [
         description:
             "Help your Business grow with our Enthusiastic Expertise .A1 Consultancy provides excellent services designed to meet your specific demands.",
         button: "About Us",
-        image: "https://starbpo.com.pk/wp-content/uploads/2022/11/11-1-min.png",
+        image: b1,
     },
     {
         title: "Experience Outstanding Customer Support With A1 Consultancy",
         description:
             "Collaborate with us to experience exceptional professionalism and commitment to excellence.",
         button: "About Us",
-        image: "https://starbpo.com.pk/wp-content/uploads/2022/11/22-min.png",
+        image: b2,
     }
 ];
 

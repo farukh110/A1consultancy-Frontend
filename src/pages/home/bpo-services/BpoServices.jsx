@@ -1,7 +1,11 @@
-import React from 'react';
 import { Link } from "react-router-dom";
 import FancyHeading from '../../../components/controls/fancy-heading/FancyHeading';
 import ItemService from './ItemService';
+import digital_marketing from '../../../assets/images/services/digital-marketing.jpg';
+import lead_generation from '../../../assets/images/services/lead-generation.jpg';
+import inbound from '../../../assets/images/services/inbound.jpg';
+import outbound from '../../../assets/images/services/outbound.jpg';
+
 import './index.scss';
 
 const BpoServices = () => {
@@ -10,7 +14,7 @@ const BpoServices = () => {
         {
             id: 1,
             title: 'Inbound Calling Services',
-            service_back_image: 'https://starbpo.com.pk/wp-content/uploads/2021/10/inbound-call-center-690x375.jpg',
+            service_back_image: inbound,
             service_image: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Inbond-calling-150x150.png',
             service_image_hover: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Inbond-calling-w-150x150.png',
             thumbnail_width: 150,
@@ -22,7 +26,7 @@ const BpoServices = () => {
         {
             id: 2,
             title: 'Outbound Calling',
-            service_back_image: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Call-Center-690x375.jpg',
+            service_back_image: outbound,
             service_image: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Outbond-Calling-150x150.png',
             service_image_hover: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Outbond-Calling-w-150x150.png',
             thumbnail_width: 150,
@@ -33,26 +37,26 @@ const BpoServices = () => {
         },
         {
             id: 3,
-            title: 'Data Scrubing',
-            service_back_image: 'https://starbpo.com.pk/wp-content/uploads/2021/10/8927229869-1280x720-1-690x375.jpeg',
+            title: 'Lead Generation',
+            service_back_image: lead_generation,
             service_image: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Data-150x150.png',
             service_image_hover: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Data-w-150x150.png',
             thumbnail_width: 150,
             thumbnail_height: 150,
-            link: '/data-scrubing',
-            description: 'Data Scrubbing Data scrubbing is the process of fixing errors...',
+            link: '/lead-generation',
+            description: 'Do you want to improve your revenue? Utilizing our services is your best decision.',
             btn_readmore: 'READ MORE'
         },
         {
             id: 4,
-            title: 'Software Development',
-            service_back_image: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Software_Developer_Getty_RossHelen-690x375.jpg',
+            title: 'Digital Marketing',
+            service_back_image: digital_marketing,
             service_image: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Software-Development-150x150.png',
             service_image_hover: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Software-Development-w-150x150.png',
             thumbnail_width: 150,
             thumbnail_height: 150,
             link: '/software-development',
-            description: 'Software Development Website design and development is not confined to...',
+            description: `Boost your business with A1Consultancy digital marketing services.`,
             btn_readmore: 'READ MORE'
         }
     ];
