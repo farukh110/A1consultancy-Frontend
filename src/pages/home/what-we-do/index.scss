@@ -27,7 +27,7 @@
             background-color: #fff;
             box-shadow: 0px 7px 43px 0px rgba(0, 0, 0, 0.08);
             padding: 40px 20px 40px 60px;
-            height: 370px;
+            height: 300px;
             position: relative;
 
             &::before {
@@ -41,7 +41,8 @@
             }
 
             .info-title {
-                margin-top: 20px;
+                // margin-top: 20px;
+                margin-top: 80px;
                 margin-bottom: 15px;
             }
 
@@ -61,7 +62,7 @@
 
                     .icon-small {
 
-                        background: #000;
+                        // background: #000;
                         border-radius: 100%;
                     }
                 }
@@ -69,12 +70,11 @@
                 .icon-image {
                     position: absolute;
                     left: 18px;
-                    top: 13px;
-                    filter: invert(1);
+                    top: -80px;
 
                     img {
-                        width: 48px;
-                        height: 46px;
+                        width: 60px;
+                        height: 58px;
                     }
                 }
             }

@@ -3,6 +3,9 @@ import './index.scss';
 import InfoBox from './InfoBox';
 import FancyHeading from '../../../components/controls/fancy-heading/FancyHeading';
 import bpoPerson from '../../../assets/images/bpo-person.png';
+import vision from '../../../assets/images/icons/vision.png';
+import mission from '../../../assets/images/icons/mission.png';
+import work from '../../../assets/images/icons/work.png';
 
 const WhatWeDo = () => {
 
@@ -11,24 +14,24 @@ const WhatWeDo = () => {
         {
             id: 1,
             activeImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_active.svg',
-            inActiveImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_inactive.svg',
-            thumbnail: 'https://starbpo.com.pk/wp-content/uploads/2022/09/Vission-150x150.png',
+            inActiveImg: null,
+            thumbnail: vision,
             infoTitle: 'Our Vision',
             infoText: `For A1 Consultancy, putting our clients first is core value and mission. Every member of our team is competent and professional.`
         },
         {
             id: 2,
             activeImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_active.svg',
-            inActiveImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_inactive.svg',
-            thumbnail: 'https://starbpo.com.pk/wp-content/uploads/2022/09/Mission-150x150.png',
+            inActiveImg: null,
+            thumbnail: mission,
             infoTitle: 'Our Mission',
             infoText: `Offering first-rate support to our customers is our top priority.  We have experts to meet your needs.`
         },
         {
             id: 3,
             activeImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_active.svg',
-            inActiveImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_inactive.svg',
-            thumbnail: 'https://starbpo.com.pk/wp-content/uploads/2022/09/Expertise-150x150.png',
+            inActiveImg: null,
+            thumbnail: work,
             infoTitle: 'Working For Excellence',
             infoText: `We value excellence in our service delivery. We are very satisfied with the work we provide to you.`
         }
@@ -72,35 +75,21 @@ const WhatWeDo = () => {
                                     <p>
                                         Need ready-to-go solutions? Don't fret over this! Our team is here to assist you in ensuring efficient delivery while saving you time and costs.
 
-                                        We are an energetic, youthful company with expertise in the most recent trends in the outsourcing industry. A1 Consultancy built a strong, sociable team focused on quality. Capturing more leads and converting them into long-term customers. We serve businesses to excel and satisfy demanding customers. We prioritize your goals as our own to guarantee ongoing success.
+                                        We are an energetic, youthful company with expertise in recent trends. A1Consultancy created a quality-focused, friendly team. Capturing more leads and converting them into long-term customers. We prioritize your goals as our own to guarantee ongoing success.
 
                                     </p>
                                     <h4> Here's What Sets Us Unique </h4>
                                     <ul>
-                                        <li>Use the latest tools and technologies</li>
-                                        <li>Fully grasp your needs.</li>
-                                        <li>Guaranteed to be 100% satisfied</li>
-                                        <li>
-                                            Qualified leads from distinct sources
-                                        </li>
-                                        <li>
-                                            Affordable solutions.
-                                        </li>
-                                        <li>
-                                            Building customer relationships.
-                                        </li>
-                                        <li>
-                                            Collaboration for maximum benefit.
-                                        </li>
-                                        <li>
-                                            Collaborate on successful designs and companies.
-                                        </li>
-                                        <li>
-                                            Enjoy security, originality, and service.
-                                        </li>
-                                        <li>
-                                            Meeting expectations with excellent service.
-                                        </li>
+                                        <li>Use advanced technology</li>
+                                        <li>Understand your needs</li>
+                                        <li>100% satisfaction guaranteed</li>
+                                        <li> Qualified leads </li>
+                                        <li> Affordable solutions </li>
+                                        <li> Building customer bond </li>
+                                        <li> optimal benefit </li>
+                                        <li> Enjoy security</li>
+                                        <li> Provide excellent service.</li>
+
                                     </ul>
 
                                 </div>

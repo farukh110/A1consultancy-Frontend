@@ -14,7 +14,9 @@ const Footer = () => {
                                 <div className="address-box">
                                     <h3 className="address-title">About Us</h3>
                                     <div className="address-info">
-                                        Need ready-to-go solutions? Don't fret over this! Our team is here to assist you in ensuring efficient delivery while saving you time and costs. We are an energetic, youthful company with expertise in the most recent trends in the outsourcing industry.
+
+                                        For Business Success, A1Consultancy offers results-focused services. Our team of dedicated customer care representatives strives to improve client satisfaction through strategic planning.
+
                                     </div>
                                 </div>
                             </div>
@@ -22,7 +24,7 @@ const Footer = () => {
                                 <div className="address-box">
                                     <h3 className="address-title">Other Menu </h3>
                                     <div className="address-info">
-                                        <ul className='ps-0'>
+                                        <ul className='ps-2'>
                                             <li> Lead Generation </li>
                                             <li> Digital Marketing </li>
                                             <li> Contact Center </li>
@@ -34,11 +36,12 @@ const Footer = () => {
                             </div>
                             <div className="col-md-4 col-sm-6">
                                 <div className="address-box">
-                                    <h3 className="address-title">Contact Details</h3>
+                                    <h3 className="address-title">Important Menu</h3>
                                     <div className="address-info">
-                                        Location: USA <br /> Email: Info@a1consultancy.com <br />
-                                        Phone: +123-456-7891
-
+                                        <ul className='ps-3'>
+                                            <li> Blogs </li>
+                                            <li> Careers </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

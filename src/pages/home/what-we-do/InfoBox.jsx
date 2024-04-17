@@ -19,15 +19,18 @@ const InfoBox = (props) => {
                                     alt="figure"
                                 />
                             </div>
-                            <img
-                                loading="lazy"
-                                decoding="async"
-                                src={inActiveImg}
-                                height={82}
-                                width={82}
-                                alt="figure"
-                                className="icon-small"
-                            />
+
+                            {inActiveImg !== null ?
+                                <img
+                                    loading="lazy"
+                                    decoding="async"
+                                    src={inActiveImg}
+                                    height={82}
+                                    width={82}
+                                    alt="figure"
+                                    className="icon-small"
+                                /> : null}
+
                             <div className="icon-image">
                                 <span className="info-img">
                                     <img
