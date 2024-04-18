@@ -19,7 +19,7 @@ const BpoServices = () => {
             service_image_hover: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Inbond-calling-w-150x150.png',
             thumbnail_width: 150,
             thumbnail_height: 150,
-            link: '/inbound',
+            link: '/inbound-calls',
             description: `Inbound calls refer to customer phone calls to a company's customer service...`,
             btn_readmore: 'READ MORE'
         },
@@ -31,7 +31,7 @@ const BpoServices = () => {
             service_image_hover: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Outbond-Calling-w-150x150.png',
             thumbnail_width: 150,
             thumbnail_height: 150,
-            link: '/outbound',
+            link: '/outbound-calls',
             description: 'Outbound Calling System An outbound call is one initiated by...',
             btn_readmore: 'READ MORE'
         },

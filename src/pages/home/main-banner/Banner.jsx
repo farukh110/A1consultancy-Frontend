@@ -22,7 +22,7 @@ const Banner = (props) => {
                     >
                         <div className="container">
                             <div className="row">
-                                <div className="col-xl-9 col-md-12">
+                                <div className="col-xl-6 col-md-12">
                                     <div className="slider-content slider-content-2">
                                         <h1
                                             className="white-color f-700"

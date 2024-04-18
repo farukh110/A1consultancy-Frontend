@@ -87,7 +87,9 @@ const Navbar = () => {
                                         {item.title}
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <Link to='/web-development' className="dropdown-item text-capitalize">Web Development</Link>
+                                        <Link to='/inbound-calls' className="dropdown-item text-capitalize">Inbound Calls</Link>
+                                        <Link to='/outbound-calls' className="dropdown-item text-capitalize">Outbound Calls</Link>
+                                        <Link to='/lead-generation' className="dropdown-item text-capitalize">Lead Generation</Link>
                                         <Link to='/digital-marketing' className="dropdown-item text-capitalize">digital marketing</Link>
                                         <Link to='/contact-center-services' className="dropdown-item text-capitalize">Contact Center Services</Link>
                                         <Link to='/back-office-services' className="dropdown-item text-capitalize">Back Office Services</Link>
