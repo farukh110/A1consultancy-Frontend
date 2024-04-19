@@ -64,7 +64,9 @@ const Navbar = () => {
     return (
         <nav className="navbar shadow">
             <h1 className="navbar-logo mb-0">
-                <img src={logo} className="img-fluid logo" alt="A1 Consultancy" />
+                <Link to='/'>
+                    <img src={logo} className="img-fluid logo" alt="A1 Consultancy" />
+                </Link>
             </h1>
             <div className="menu-icon" onClick={handleMenuToggle}>
                 <i className={menuOpen ? "fas fa-times" : "fas fa-bars"}></i>

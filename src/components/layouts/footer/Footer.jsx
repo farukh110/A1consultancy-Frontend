@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo/logo.jpg';
 import './index.scss';
 
@@ -25,11 +26,11 @@ const Footer = () => {
                                     <h3 className="address-title">Other Menu </h3>
                                     <div className="address-info">
                                         <ul className='ps-2'>
-                                            <li> Lead Generation </li>
+                                            <li> <Link className='text-decoration-none text-light' to='/lead-generation'> Lead Generation </Link> </li>
                                             <li> Digital Marketing </li>
                                             <li> Contact Center </li>
-                                            <li> Inbound Calling </li>
-                                            <li> Outbound Calling </li>
+                                            <li> <Link className='text-decoration-none text-light' to='/inbound-calls'> Inbound Calling </Link></li>
+                                            <li> <Link className='text-decoration-none text-light' to='/outbound-calls'> Outbound Calling </Link></li>
                                         </ul>
                                     </div>
                                 </div>
