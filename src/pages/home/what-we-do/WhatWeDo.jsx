@@ -3,9 +3,9 @@ import './index.scss';
 import InfoBox from './InfoBox';
 import FancyHeading from '../../../components/controls/fancy-heading/FancyHeading';
 import bpoPerson from '../../../assets/images/bpo-person.png';
-import vision from '../../../assets/images/icons/vision.png';
-import mission from '../../../assets/images/icons/mission.png';
-import work from '../../../assets/images/icons/work.png';
+import vision from '../../../assets/images/icons/icons8-call-center-50.png';
+import mission from '../../../assets/images/icons/icons8-money-bag-50.png';
+import work from '../../../assets/images/icons/icons8-positive-dynamic-50.png';
 
 const WhatWeDo = () => {
 
@@ -15,6 +15,10 @@ const WhatWeDo = () => {
             id: 1,
             activeImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_active.svg',
             inActiveImg: null,
+            boxBg: '#C15D65',
+            iconColor: '#fff',
+            titleColor: '#fff',
+            contentColor: '#fff',
             thumbnail: vision,
             infoTitle: 'Specialized Expertise',
             infoText: `Stay ahead of the competition by Access industry experts and cutting-edge technology`
@@ -23,6 +27,10 @@ const WhatWeDo = () => {
             id: 2,
             activeImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_active.svg',
             inActiveImg: null,
+            boxBg: '#fff',
+            iconColor: '#fff',
+            titleColor: '#000',
+            contentColor: '#000',
             thumbnail: mission,
             infoTitle: 'Cost-Efficiency',
             infoText: `Reduce operational costs and enhance return on investment with our highly effective outsourcing solutions`
@@ -31,6 +39,10 @@ const WhatWeDo = () => {
             id: 3,
             activeImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_active.svg',
             inActiveImg: null,
+            boxBg: '#54527F',
+            iconColor: '#fff',
+            titleColor: '#fff',
+            contentColor: '#fff',
             thumbnail: work,
             infoTitle: 'Enhanced Productivity',
             infoText: `Outsourcing non-core work to professionals streamlines corporate procedures and boosts productivity`
@@ -55,6 +67,10 @@ const WhatWeDo = () => {
                                     id={item.id}
                                     activeImg={item.activeImg}
                                     inActiveImg={item.inActiveImg}
+                                    boxBg={item.boxBg}
+                                    iconColor={item.iconColor}
+                                    titleColor={item.titleColor}
+                                    contentColor={item.contentColor}
                                     thumbnail={item.thumbnail}
                                     infoTitle={item.infoTitle}
                                     infoText={item.infoText}

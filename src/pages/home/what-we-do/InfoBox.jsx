@@ -1,12 +1,12 @@
 const InfoBox = (props) => {
 
-    const { activeImg, inActiveImg, thumbnail, infoTitle, infoText } = props;
+    const { activeImg, inActiveImg, boxBg, iconColor, titleColor, contentColor, thumbnail, infoTitle, infoText } = props;
 
     return (
         <div className='col-md-4 p-0'>
 
             <div className="info-box info-style4 show-border">
-                <div className="info-item media-image">
+                <div style={{ background: boxBg }} className="info-item media-image">
                     <div className="info-content media-body">
                         <div className="icon-circle-image">
                             <div className="hover-image">
@@ -45,8 +45,8 @@ const InfoBox = (props) => {
                                 </span>
                             </div>
                         </div>
-                        <h3 className="info-title">{infoTitle}</h3>
-                        <p className="info-text">
+                        <h3 style={{ color: titleColor }} className="info-title">{infoTitle}</h3>
+                        <p style={{ color: titleColor }} className="info-text">
                             {infoText}
                             <br />
                             <br />{" "}
