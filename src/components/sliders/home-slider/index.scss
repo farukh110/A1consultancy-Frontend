@@ -119,11 +119,12 @@
         button {
             padding: 17px 30px 17px 30px;
             display: inline-block;
-            color: #000;
+            color: #FFFFFF;
             font-size: 16px;
             font-weight: 500;
             line-height: 1;
-            background-color: #fff;
+            background: rgb(197, 33, 36);
+            background: linear-gradient(90deg, rgba(197, 33, 36, 1) 0%, rgba(22, 30, 118, 1) 100%);
             border: none;
             border-radius: 50px;
             box-shadow: 0 6px 27px 0 rgba(0, 0, 0, 0.1);
