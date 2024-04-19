@@ -9,7 +9,7 @@ import './index.scss';
 
 const content = [
     {
-        title: 'AoneConsultancy On Mission To Shape Future Success',
+        title: 'AoneConsultancy<br/>On Mission To Shape Future Success',
         description:
             'Accessing a World of Diversified Solutions for Your Business Problems where Ambition, Collaboration, and Outstanding Skills come together with Affordability',
         button: 'About Us',
@@ -45,7 +45,7 @@ const MainSlider = () => {
                     style={{ background: `url('${item.image}') no-repeat center center` }}
                 >
                     <div className="inner">
-                        <h1>{item.title}</h1>
+                        <h1 dangerouslySetInnerHTML={{ __html: item.title }}></h1>
                         <p>{item.description}</p>
                         <button className="btn btn-danger">{item.button}</button>
                     </div>
