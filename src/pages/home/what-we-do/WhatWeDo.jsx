@@ -16,24 +16,24 @@ const WhatWeDo = () => {
             activeImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_active.svg',
             inActiveImg: null,
             thumbnail: vision,
-            infoTitle: 'Our Vision',
-            infoText: `For A1 Consultancy, putting our clients first is core value and mission. Every member of our team is competent and professional.`
+            infoTitle: 'Specialized Expertise',
+            infoText: `Stay ahead of the competition by Access industry experts and cutting-edge technology`
         },
         {
             id: 2,
             activeImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_active.svg',
             inActiveImg: null,
             thumbnail: mission,
-            infoTitle: 'Our Mission',
-            infoText: `Offering first-rate support to our customers is our top priority.  We have experts to meet your needs.`
+            infoTitle: 'Cost-Efficiency',
+            infoText: `Reduce operational costs and enhance return on investment with our highly effective outsourcing solutions`
         },
         {
             id: 3,
             activeImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_active.svg',
             inActiveImg: null,
             thumbnail: work,
-            infoTitle: 'Working For Excellence',
-            infoText: `We value excellence in our service delivery. We are very satisfied with the work we provide to you.`
+            infoTitle: 'Enhanced Productivity',
+            infoText: `Outsourcing non-core work to professionals streamlines corporate procedures and boosts productivity`
         }
     ]
 

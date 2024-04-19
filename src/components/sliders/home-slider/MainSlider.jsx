@@ -9,7 +9,7 @@ import './index.scss';
 
 const content = [
     {
-        title: 'AoneConsultancy<br/>On Mission To Shape Future Success',
+        title: '<span> AoneConsultancy </span> <br/>On Mission To Shape Future Success',
         description:
             'Accessing a World of Diversified Solutions for Your Business Problems where Ambition, Collaboration, and Outstanding Skills come together with Affordability',
         button: 'About Us',
