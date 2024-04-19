@@ -94,8 +94,8 @@ const Navbar = () => {
                                         <Link to='/lead-generation' className="dropdown-item text-capitalize">Lead Generation</Link>
                                         <Link to='/digital-marketing' className="dropdown-item text-capitalize">digital marketing</Link>
                                         <Link to='/contact-center-services' className="dropdown-item text-capitalize">Contact Center Services</Link>
-                                        <Link to='/back-office-services' className="dropdown-item text-capitalize">Back Office Services</Link>
-                                        <Link to='/video-monitoring-surveillance' className="dropdown-item text-capitalize">Video Monitoring Surveillance</Link>
+                                        {/* <Link to='/back-office-services' className="dropdown-item text-capitalize">Back Office Services</Link> */}
+                                        {/* <Link to='/video-monitoring-surveillance' className="dropdown-item text-capitalize">Video Monitoring Surveillance</Link> */}
                                     </div>
                                 </div>
                             ) : (
