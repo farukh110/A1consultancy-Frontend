@@ -14,11 +14,11 @@ const menuItems = [
         url: "#",
         cName: "nav-links"
     },
-    {
-        title: "Products",
-        url: "/products",
-        cName: "nav-links"
-    },
+    // {
+    //     title: "Products",
+    //     url: "/products",
+    //     cName: "nav-links"
+    // },
     {
         title: "Blogs",
         url: "/blogs",

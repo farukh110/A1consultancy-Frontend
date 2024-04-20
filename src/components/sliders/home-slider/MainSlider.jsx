@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import 'normalize.css/normalize.css';
@@ -9,7 +9,7 @@ import './index.scss';
 
 const content = [
     {
-        title: '<span> AoneConsultancy </span> <br/>On Mission To Shape Future Success',
+        title: 'AoneConsultancy On Mission To Shape Future Success',
         description:
             'Accessing a World of Diversified Solutions for Your Business Problems where Ambition, Collaboration, and Outstanding Skills come together with Affordability',
         button: 'About Us',
@@ -25,33 +25,24 @@ const content = [
 ];
 
 const MainSlider = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            const nextSlideIndex = (currentSlide + 1) % content.length;
-            setCurrentSlide(nextSlideIndex);
-        }, 5000); // Change slide every 5 seconds
-
-        return () => clearTimeout(timer);
-    }, [currentSlide]);
-
     return (
-        <Slider className="slider-wrapper">
-            {content.map((item, index) => (
-                <div
-                    key={index}
-                    className={`slider-content ${index === currentSlide ? 'active' : ''}`}
-                    style={{ background: `url('${item.image}') no-repeat center center` }}
-                >
-                    <div className="inner">
-                        <h1 dangerouslySetInnerHTML={{ __html: item.title }}></h1>
-                        <p>{item.description}</p>
-                        <button className="btn btn-danger">{item.button}</button>
+        <>
+            <Slider className="slider-wrapper" autoplay={1} infinite={true}>
+                {content.map((item, index) => (
+                    <div
+                        key={index}
+                        className="slider-content"
+                        style={{ background: `url('${item.image}') no-repeat center center` }}
+                    >
+                        <div className="inner">
+                            <h1>{item.title}</h1>
+                            <p>{item.description}</p>
+                            <button className="btn btn-danger">{item.button}</button>
+                        </div>
                     </div>
-                </div>
-            ))}
-        </Slider>
+                ))}
+            </Slider>
+        </>
     );
 };
 

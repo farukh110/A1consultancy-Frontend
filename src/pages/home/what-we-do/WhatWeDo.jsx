@@ -6,6 +6,7 @@ import bpoPerson from '../../../assets/images/bpo-person.png';
 import vision from '../../../assets/images/icons/icons8-call-center-50.png';
 import mission from '../../../assets/images/icons/icons8-money-bag-50.png';
 import work from '../../../assets/images/icons/icons8-positive-dynamic-50.png';
+import GlobeWorld from '../globe/GlobeWorld';
 
 const WhatWeDo = () => {
 
@@ -85,16 +86,8 @@ const WhatWeDo = () => {
 
                                 <FancyHeading title="What We Do" />
 
-                                <h2 className="section-title">A1Consultancy And IT Services</h2>
-
                                 <div className="section-content">
-                                    <p>
-                                        Need ready-to-go solutions? Don't fret over this! Our team is here to assist you in ensuring efficient delivery while saving you time and costs.
 
-                                        We are an energetic, youthful company with expertise in recent trends. A1Consultancy created a quality-focused, friendly team. Capturing more leads and converting them into long-term customers. We prioritize your goals as our own to guarantee ongoing success.
-
-                                    </p>
-                                    <h4> Here's What Sets Us Unique </h4>
                                     <ul>
                                         <li>Use advanced technology</li>
                                         <li>Understand your needs</li>
@@ -115,7 +108,8 @@ const WhatWeDo = () => {
 
                             <div className='col-md-6'>
 
-                                <img className='img-fluid' src={bpoPerson} alt="" />
+                                {/* <img className='img-fluid' src={bpoPerson} alt="" /> */}
+                                <GlobeWorld className="full-width-globe" />
 
                             </div>
 
