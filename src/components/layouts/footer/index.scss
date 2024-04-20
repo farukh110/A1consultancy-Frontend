@@ -1,16 +1,13 @@
 footer {
-    padding: 10px;
-
-    .custom-footer-padding {
-        background-color: #111111;
-    }
 
     .address-box {
-        margin-bottom: 60px;
 
         .address-info {
-            color: #e8e8e8;
-            padding-right: 130px;
+            color: #000;
+
+            ul {
+                list-style: none;
+            }
         }
 
         .address-title {
@@ -47,29 +44,12 @@ footer {
         }
     }
 
-    // .color-overlay1 {
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0;
-    // }
-
-    // .color-overlay2 {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    // }
-
     .footer-inner {
 
-        margin-top: -70px;
-        margin-bottom: -0px;
-
         .footer-top-area {
-            background-color: #ffffff;
-            padding: 86px 0 90px;
+            background-color: #f6f3f3;
+            padding: 45px 0 45px;
             box-shadow: 0 25px 27px 0 rgb(154 154 154 / 34%);
-            margin-left: calc((100% - 1140px) / 2 - 85px);
-            margin-right: calc((100% - 1140px) / 2 - 85px);
 
             .widgettitle {
 
@@ -110,4 +90,9 @@ footer {
         }
 
     }
+}
+
+.copyright {
+
+    text-align: right !important;
 }

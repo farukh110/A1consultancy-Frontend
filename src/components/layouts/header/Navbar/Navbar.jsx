@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import menuItems from "./menu-items/MenuItems";
 import './index.scss';
 // import Button from "../../../controls/button/Button";
-import logo from '../../../../assets/logo/logo.jpg';
+import logo from '../../../../assets/logo/a1-logo1.png';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from "react-router-dom";
 
@@ -63,7 +63,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar shadow">
-            <h1 className="navbar-logo mb-0">
+            <h1 className="navbar-logo mb-0 mt-0 ms-3">
                 <Link to='/'>
                     <img src={logo} className="img-fluid logo" alt="A1 Consultancy" />
                 </Link>
