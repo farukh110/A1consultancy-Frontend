@@ -10,6 +10,7 @@ import VideoMonitoring from './pages/video-monitoring/VideoMonitoring';
 import InboundCalls from './pages/inbound-calls/InboundCalls';
 import OutboundCalls from './pages/outbound-calls/OutboundCalls';
 import LeadGeneration from './pages/lead-generation/LeadGeneration';
+import Contact from './pages/contact/Contact';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route exact path="/contact-center-services" element={<ContactCenter />} />
           <Route exact path="/back-office-services" element={<BackOffice />} />
           <Route exact path="/video-monitoring-surveillance" element={<VideoMonitoring />} />
+          <Route exact path="/contact-us" element={<Contact />} />
         </Routes>
         <Footer />
       </div>
