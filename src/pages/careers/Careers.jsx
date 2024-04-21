@@ -1,20 +1,20 @@
-import ContactForm from "../home/contact-form/CareersForm";
 import banner from '../../assets/images/inner-services/contact-center.jpg';
 import Page from "../generic-page/Page";
+import CareersForm from '../home/contact-form/CareersForm';
 
-const Contact = () => {
+const Careers = () => {
 
     return (
         <div>
             <Page
                 bannerImage={banner}
                 mediumText={null}
-                mediumBelowText={`Contact Us`}
+                mediumBelowText={`Careers`}
                 bannerContent={null}
             />
-            <ContactForm />
+            <CareersForm />
         </div>
     )
 }
 
-export default Contact;
+export default Careers;
