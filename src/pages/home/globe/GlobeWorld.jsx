@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback } from 'react';
 import Globe from 'react-globe.gl';
+import './index.scss';
 
 const ARC_REL_LEN = 0.4; // relative to whole arc
 const FLIGHT_TIME = 1000;
@@ -38,7 +39,7 @@ const GlobeWorld = () => {
     }, []);
 
     return (
-        <div id="globeViz">
+        <div id="globeViz" style={{ width: '100%', height: '100%' }}>
             <Globe
                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"

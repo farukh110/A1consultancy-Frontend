@@ -82,7 +82,7 @@ const WhatWeDo = () => {
 
                         <div className='row mt-5'>
 
-                            <div className='col-md-6'>
+                            <div className='col-lg-6 col-md-6 col-12'>
 
                                 <FancyHeading title="What We Do" />
 
@@ -106,7 +106,7 @@ const WhatWeDo = () => {
 
                             </div>
 
-                            <div className='col-md-6'>
+                            <div className='col-lg-6 col-md-6 col-12'>
 
                                 {/* <img className='img-fluid' src={bpoPerson} alt="" /> */}
                                 <GlobeWorld className="full-width-globe" />

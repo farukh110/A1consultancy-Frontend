@@ -1,0 +1,14 @@
+@media (max-width: 480px) {
+
+    .scene-container {
+
+        width: 100% !important;
+        height: unset !important;
+    }
+
+    canvas {
+
+        width: 100% !important;
+        height: unset !important;
+    }
+}
