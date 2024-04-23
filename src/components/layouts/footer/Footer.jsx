@@ -35,8 +35,8 @@ const Footer = () => {
                                             </div>
                                         </div>
 
-                                        <div className="address-box">
-                                            <div className="address-info w-75">
+                                        <div className="address-box mt-lg-0 mt-md-0 mb-lg-0 mb-md-0 mb-3">
+                                            <div className="address-info w-lg-75 w-md-75 w-100">
 
                                                 A trusted outsourced call center equipped with a highly skilled team, ready to meet all of your call center requirements. Manage cold calling, virtual receptionists, inbound, and outbound calling.
 
@@ -114,9 +114,9 @@ const Footer = () => {
 
                     <div className='container'>
 
-                        <div className='row'>
+                        <div className='row justify-content-center'>
 
-                            <div className='col-md-6'>
+                            <div className='col-lg-6 col-md-6 col-8'>
 
                                 <p className="ps-lg-4 ps-md-0 ps-0 mb-0">
                                     <span className="follow-us text-light">Follow us: </span>
@@ -140,7 +140,7 @@ const Footer = () => {
 
                             </div>
 
-                            <div className='col-md-6'>
+                            <div className='col-md-6 mt-lg-0 mt-md-0 mt-2'>
 
                                 <div className="copyright text-light">
                                     © 2024 A1Consultancy. All Rights Reserved.

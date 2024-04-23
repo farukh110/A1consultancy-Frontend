@@ -96,3 +96,26 @@ footer {
 
     text-align: right !important;
 }
+
+@media (max-width: 480px) {
+
+    footer {
+
+        .footer-inner {
+
+            .footer-top-area {
+                padding: 35px 0 10px;
+
+                .widgettitle {
+                    color: #000;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center !important;
+        font-size: 14px;
+    }
+}
