@@ -12,6 +12,7 @@ import OutboundCalls from './pages/outbound-calls/OutboundCalls';
 import LeadGeneration from './pages/lead-generation/LeadGeneration';
 import Contact from './pages/contact/Contact';
 import Careers from './pages/careers/Careers';
+import AboutUs from './pages/about/AboutUs';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/about-us" element={<AboutUs />} />
           <Route exact path="/inbound-calls" element={<InboundCalls />} />
           <Route exact path="/outbound-calls" element={<OutboundCalls />} />
           <Route exact path="/lead-generation" element={<LeadGeneration />} />

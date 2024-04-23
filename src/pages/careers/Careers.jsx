@@ -1,6 +1,6 @@
 import banner from '../../assets/images/inner-services/contact-center.jpg';
 import Page from "../generic-page/Page";
-import CareersForm from '../home/contact-form/CareersForm';
+import CareersForm from '../home/careers-form/CareersForm';
 
 const Careers = () => {
 
