@@ -127,7 +127,7 @@ const ContactForm = () => {
                                     </h2>
                                 </div>
                             </div>
-                            <div className="row py-3 mx-3 pb-0">
+                            <div className="row py-3 mx-2 pb-0">
                                 <div className="col-md-6 mb-2">
                                     <input
                                         className="form-control"

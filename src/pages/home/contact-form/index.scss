@@ -56,3 +56,22 @@ textarea {
         font-size: 25px;
     }
 }
+
+@media only screen and (max-width: 480px) {
+
+    .btn-form-bord {
+
+        a {
+            font-size: 20px !important;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    .free-quote-head {
+
+        font-size: 22px;
+    }
+}

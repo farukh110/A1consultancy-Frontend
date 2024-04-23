@@ -63,7 +63,7 @@ const BpoServices = () => {
 
     return (
         <>
-            <section className='bpo-services py-5'>
+            <section className='bpo-services py-lg-5 py-md-5 py-5 mb-lg-0 mb-md-0 mb-0'>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-md-6'>

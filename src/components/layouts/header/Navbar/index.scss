@@ -185,14 +185,26 @@
 
 @media (max-width: 480px) {
 
+    .menu-icon {
+        transform: translate(-100%, 45%);
+    }
+
+    .navbar-logo {
+        top: -15px;
+    }
+
     .navbar {
         .logo {
-            width: 60%;
+            width: 45%;
         }
     }
 
     .nav-menu {
-        height: 30vh;
+        height: 45vh;
+    }
+
+    .nav-menu.active {
+        z-index: 12 !important;
     }
 
     .bm-burger-button {

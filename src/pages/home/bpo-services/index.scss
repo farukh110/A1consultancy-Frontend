@@ -257,3 +257,89 @@
 .service-grid-layout1 .service-item:hover .service-box-content .btn-style1 i {
     color: #fff;
 }
+
+@media only screen and (max-width: 480px) {
+
+    .subtitle {
+
+        font-size: 18px;
+    }
+
+    .section-title {
+
+        font-size: 22px;
+    }
+
+    .section-content {
+
+        p {
+
+            font-size: 16px;
+        }
+    }
+
+    .bpo-services {
+        padding-bottom: 0px !important;
+    }
+
+    .form-section {
+
+        margin-top: 0px !important;
+    }
+
+    .service-grid-layout1 {
+
+        .service-item {
+
+            .service-title {
+                font-size: 20px;
+            }
+
+            .service-box-content {
+
+                .service-info {
+                    margin-left: 10px;
+                }
+
+                .service-content {
+                    padding: 20px 20px 25px 15px;
+                    flex-direction: column;
+
+                    p {
+                        font-size: 16px;
+                    }
+
+                    .service-image {
+
+                        span {
+
+                            img {
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+                    }
+
+                    .service-hover-img {
+
+                        span {
+
+                            img {
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .service-button1 .btn-style1 {
+
+        padding: 12px 30px 12px 30px;
+        color: #000;
+        margin: 0 auto;
+        display: table;
+    }
+}

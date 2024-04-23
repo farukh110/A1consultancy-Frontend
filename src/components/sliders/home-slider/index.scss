@@ -169,6 +169,30 @@
     display: block;
 }
 
+@media only screen and (max-width: 480px) {
+
+    .slider-content {
+
+        .inner {
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            padding: 0 40px;
+            -webkit-transform: translate(-50%, -55%);
+            transform: translate(-50%, -55%);
+
+            button {
+
+                margin-left: unset !important;
+                float: left;
+            }
+        }
+    }
+
+}
+
 @media (max-height: 500px) {
 
     .slider-wrapper,

@@ -104,7 +104,7 @@ footer {
         .footer-inner {
 
             .footer-top-area {
-                padding: 35px 0 10px;
+                padding: 35px 10px 10px;
 
                 .widgettitle {
                     color: #000;
@@ -117,5 +117,22 @@ footer {
     .copyright {
         text-align: center !important;
         font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    footer {
+
+        .footer-inner {
+
+            .footer-top-area {
+
+                .widgettitle {
+
+                    font-size: 22px;
+                }
+            }
+        }
     }
 }
