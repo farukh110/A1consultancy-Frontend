@@ -6,6 +6,18 @@ import lead_generation from '../../../assets/images/services/lead-generation.jpg
 import inbound from '../../../assets/images/services/inbound.jpg';
 import outbound from '../../../assets/images/services/outbound.jpg';
 
+import inboundIcon from '../../../assets/icons/inbound-calls.png';
+import inboundIconActive from '../../../assets/icons/inbound-calls-active.png';
+
+import outboundIcon from '../../../assets/icons/out-bound-calls.png';
+import outboundIconActive from '../../../assets/icons/out-bound-calls-active.png';
+
+import leadIcon from '../../../assets/icons/lead.png';
+import leadIconActive from '../../../assets/icons/lead-active.png';
+
+import digitalIcon from '../../../assets/icons/digital.png';
+import digitalActive from '../../../assets/icons/digital-active.png';
+
 import './index.scss';
 
 const BpoServices = () => {
@@ -15,10 +27,10 @@ const BpoServices = () => {
             id: 1,
             title: 'Inbound Calling Services',
             service_back_image: inbound,
-            service_image: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Inbond-calling-150x150.png',
-            service_image_hover: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Inbond-calling-w-150x150.png',
-            thumbnail_width: 150,
-            thumbnail_height: 150,
+            service_image: inboundIcon,
+            service_image_hover: inboundIconActive,
+            thumbnail_width: 110,
+            thumbnail_height: 110,
             link: '/inbound-calls',
             description: `Inbound calls refer to customer phone calls to a company's customer service...`,
             btn_readmore: 'READ MORE'
@@ -27,10 +39,10 @@ const BpoServices = () => {
             id: 2,
             title: 'Outbound Calling',
             service_back_image: outbound,
-            service_image: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Outbond-Calling-150x150.png',
-            service_image_hover: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Outbond-Calling-w-150x150.png',
-            thumbnail_width: 150,
-            thumbnail_height: 150,
+            service_image: outboundIcon,
+            service_image_hover: outboundIconActive,
+            thumbnail_width: 100,
+            thumbnail_height: 100,
             link: '/outbound-calls',
             description: 'Outbound Calling System An outbound call is one initiated by...',
             btn_readmore: 'READ MORE'
@@ -39,10 +51,10 @@ const BpoServices = () => {
             id: 3,
             title: 'Lead Generation',
             service_back_image: lead_generation,
-            service_image: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Data-150x150.png',
-            service_image_hover: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Data-w-150x150.png',
-            thumbnail_width: 150,
-            thumbnail_height: 150,
+            service_image: leadIcon,
+            service_image_hover: leadIconActive,
+            thumbnail_width: 100,
+            thumbnail_height: 100,
             link: '/lead-generation',
             description: 'Do you want to improve your revenue? Utilizing our services is your best decision.',
             btn_readmore: 'READ MORE'
@@ -51,10 +63,10 @@ const BpoServices = () => {
             id: 4,
             title: 'Digital Marketing',
             service_back_image: digital_marketing,
-            service_image: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Software-Development-150x150.png',
-            service_image_hover: 'https://starbpo.com.pk/wp-content/uploads/2021/10/Software-Development-w-150x150.png',
-            thumbnail_width: 150,
-            thumbnail_height: 150,
+            service_image: digitalIcon,
+            service_image_hover: digitalActive,
+            thumbnail_width: 100,
+            thumbnail_height: 100,
             link: '/software-development',
             description: `Boost your business with A1Consultancy digital marketing services.`,
             btn_readmore: 'READ MORE'

@@ -1,7 +1,14 @@
 .bpo-services {
 
-    background-image: url(https://starbpo.com.pk/wp-content/uploads/2021/11/figure16.png);
-    background-repeat: no-repeat;
+    background: rgb(204, 204, 204);
+    background: -moz-linear-gradient(90deg, rgba(204, 204, 204, 1) 0%, rgba(248, 248, 248, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(204, 204, 204, 1) 0%, rgba(248, 248, 248, 1) 100%);
+    background: linear-gradient(90deg, rgba(204, 204, 204, 1) 0%, rgba(248, 248, 248, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc", endColorstr="#f8f8f8", GradientType=1);
+}
+
+.service-box-content {
+    border: 1px solid rgb(177, 171, 171);
 }
 
 .service-default {
@@ -38,6 +45,11 @@
 
     .service-default.service-layout1 .service-item {
         box-shadow: 0 3px 17px rgb(0 0 0 / 15%);
+    }
+
+    .bpo-services {
+
+        padding-bottom: 0px !important;
     }
 }
 

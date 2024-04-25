@@ -216,7 +216,23 @@
 }
 
 @media (max-width: 640px) {
-    .slider-content .inner h1 {
-        font-size: 32px;
+
+    .slider-content {
+
+        .inner {
+
+            -webkit-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
+
+            h1 {
+                font-size: 26px;
+            }
+
+            button {
+
+                margin-left: unset !important;
+            }
+        }
     }
+
 }

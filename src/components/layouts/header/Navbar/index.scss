@@ -183,6 +183,20 @@
     }
 }
 
+@media (max-width: 600px) {
+
+    .navbar-logo {
+
+        transform: translate(0%, 8%);
+    }
+
+    .navbar {
+        .logo {
+            width: 40%;
+        }
+    }
+}
+
 @media (max-width: 480px) {
 
     .menu-icon {

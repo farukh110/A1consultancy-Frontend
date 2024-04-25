@@ -43,7 +43,7 @@ const Footer = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-2 col-md-6 col-12">
+                                    <div className="col-lg-2 col-md-6 col-sm-6 col-12">
                                         <div
                                             id="nav_menu-4"
                                             className="widget widget_nav_menu"
@@ -64,7 +64,7 @@ const Footer = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3 col-md-6 col-12">
+                                    <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                                         <div
                                             id="nav_menu-4"
                                             className="widget widget_nav_menu"
@@ -116,7 +116,7 @@ const Footer = () => {
 
                         <div className='row justify-content-center'>
 
-                            <div className='col-lg-6 col-md-6 col-8'>
+                            <div className='col-lg-6 col-md-6 col-sm-5 col-8'>
 
                                 <p className="ps-lg-4 ps-md-0 ps-0 mb-0">
                                     <span className="follow-us text-light">Follow us: </span>
@@ -140,7 +140,7 @@ const Footer = () => {
 
                             </div>
 
-                            <div className='col-md-6 mt-lg-0 mt-md-0 mt-2'>
+                            <div className='col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-2'>
 
                                 <div className="copyright text-light">
                                     © 2024 A1Consultancy. All Rights Reserved.

@@ -75,3 +75,11 @@ textarea {
         font-size: 22px;
     }
 }
+
+@media (max-width: 767px) {
+
+    .form-section {
+
+        margin-top: 0px !important;
+    }
+}

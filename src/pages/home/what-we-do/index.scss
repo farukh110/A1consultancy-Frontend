@@ -105,6 +105,20 @@
     height: auto;
 }
 
+@media (max-width: 767px) {
+
+    .what-we-do {
+
+        .info-style4 {
+
+            .info-item {
+                padding: 40px 20px 40px 45px;
+                height: 280px;
+            }
+        }
+    }
+}
+
 @media (max-width: 480px) {
 
     .what-we-do {
