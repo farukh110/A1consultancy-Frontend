@@ -3,7 +3,7 @@ const InfoBox = (props) => {
     const { activeImg, inActiveImg, boxBg, iconColor, titleColor, contentColor, thumbnail, infoTitle, infoText } = props;
 
     return (
-        <div className='col-md-4 p-0'>
+        <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0'>
 
             <div className="info-box info-style4 show-border">
                 <div style={{ background: boxBg }} className="info-item media-image">

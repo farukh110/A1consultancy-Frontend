@@ -1,4 +1,4 @@
-import ContactForm from "../home/careers-form/CareersForm";
+import ContactForm from "../home/contact-form/ContactForm";
 import banner from '../../assets/images/inner-services/contact-center.jpg';
 import Page from "../generic-page/Page";
 

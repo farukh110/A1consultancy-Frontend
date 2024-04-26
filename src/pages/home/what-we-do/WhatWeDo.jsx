@@ -60,7 +60,7 @@ const WhatWeDo = () => {
 
                     <div className='container'>
 
-                        <div className='row mission-vision-container'>
+                        <div className='row justify-content-center mission-vision-container'>
 
                             {
                                 items.map((item) => <InfoBox

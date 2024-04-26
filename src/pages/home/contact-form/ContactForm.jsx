@@ -74,7 +74,7 @@ const ContactForm = () => {
                             </div>
                         </div>
                         <div className="space30" />
-                        <div className="d-flex">
+                        {/* <div className="d-flex">
                             <div className="flex-shrink-0">
                                 <i className="far fa-comments contact-email" />
                             </div>
@@ -85,7 +85,7 @@ const ContactForm = () => {
                                     </a>
                                 </p>
                             </div>
-                        </div>{" "}
+                        </div> */}
                         <div className="space30" />
                         <div className="d-flex">
                             <div className="flex-shrink-0">
@@ -103,8 +103,11 @@ const ContactForm = () => {
                                 <i className="fa-solid fa-location-dot contact-email" />
                             </div>
                             <div className="flex-grow-1 ms-3">
-                                <h3>USA</h3>
-                                <p className="desc-sec mb-1 text-left">A1Consultancy</p>
+
+                                <h3>36 Engle Road,
+                                    Paramus,
+                                    New Jersey 07652, USA</h3>
+
                                 <p></p>
                                 <hr />
                             </div>

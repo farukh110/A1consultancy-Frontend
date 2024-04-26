@@ -27,3 +27,33 @@
         height: unset !important;
     }
 }
+
+@media (min-width: 767px) and (max-width: 991px) {
+
+    .scene-container {
+
+        width: 100% !important;
+        height: unset !important;
+    }
+
+    canvas {
+
+        width: 100% !important;
+        height: unset !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .scene-container {
+
+        width: 100% !important;
+        height: unset !important;
+    }
+
+    canvas {
+
+        width: 100% !important;
+        height: unset !important;
+    }
+}

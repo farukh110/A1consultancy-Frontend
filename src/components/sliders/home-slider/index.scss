@@ -236,3 +236,17 @@
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .slider-content {
+
+        .inner {
+
+            button {
+
+                margin-left: 0px !important;
+            }
+        }
+    }
+}
