@@ -62,7 +62,7 @@ const ContactForm = () => {
 
                 <div className='row justify-content-center'>
 
-                    <div className="col-md-6 p-lg-5 p-4 btn-form-bord">
+                    {/* <div className="col-md-10 p-lg-5 p-4 btn-form-bord">
                         <div className="d-flex">
                             <div className="flex-shrink-0">
                                 <i className="fa-solid fa-phone-volume fa-2xl contact-email header-call-icon" />
@@ -74,18 +74,6 @@ const ContactForm = () => {
                             </div>
                         </div>
                         <div className="space30" />
-                        {/* <div className="d-flex">
-                            <div className="flex-shrink-0">
-                                <i className="far fa-comments contact-email" />
-                            </div>
-                            <div className="flex-grow-1 ms-3">
-                                <p className="tex-dark float-left text-left h4">
-                                    <a className="tex-dark h4 text-decoration-none" href='!#'>
-                                        Live chat with us
-                                    </a>
-                                </p>
-                            </div>
-                        </div> */}
                         <div className="space30" />
                         <div className="d-flex">
                             <div className="flex-shrink-0">
@@ -112,10 +100,10 @@ const ContactForm = () => {
                                 <hr />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
 
-                    <div className='col-md-6 col-10 shadow p-md-4 py-3 p-1 rounded-3'>
+                    <div className='col-md-8 col-10 shadow p-md-4 py-3 p-1'>
 
                         <form
                             name="smallform"
@@ -215,9 +203,65 @@ const ContactForm = () => {
                         </form>
                     </div>
 
+                    <div className='col-md-8 col-10 p-md-4 py-3 p-1'>
+
+                        <div className='row justify-content-center mt-lg-3 mt-4'>
+
+                            <div className='col-lg-4 col-md-6 col-sm-6 col-12 pe-lg-4'>
+
+                                <div className='custom-detail-box'>
+                                    <div className='custom-icon'>
+
+                                        <i className="bi bi-geo-alt-fill"></i>
+                                    </div>
+
+                                    <h5 className='mt-md-2'> Location </h5>
+
+                                    <p> 36 Engle Road, Paramus, New Jersey 07652, USA </p>
+
+                                </div>
+
+                            </div>
+
+                            <div className='col-lg-4 col-md-6 col-sm-6 col-12 border-lg-start border-lg-end border-0'>
+
+                                <div className='custom-detail-box'>
+                                    <div className='custom-icon'>
+
+                                        <i className="bi bi-telephone-fill"></i>
+                                    </div>
+
+                                    <h5 className='mt-md-2'> 24/7 Help </h5>
+
+                                    <p> 123-456-7891 </p>
+
+                                </div>
+
+                            </div>
+
+                            <div className='col-lg-4 col-md-6 col-sm-6 col-12'>
+
+                                <div className='custom-detail-box'>
+                                    <div className='custom-icon'>
+
+                                        <i className="bi bi-envelope-at-fill"></i>
+                                    </div>
+
+                                    <h5 className='mt-md-2'> Email Us </h5>
+
+                                    <p> Info@a1consultancy.com </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-            </div>
+            </div >
         </>
     )
 }

@@ -37,6 +37,11 @@ textarea {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
+.form-section {
+
+    margin-bottom: 20px !important;
+}
+
 .btn-form-bord {
 
     i {
@@ -54,6 +59,30 @@ textarea {
 
     h3 {
         font-size: 25px;
+    }
+}
+
+.custom-detail-box {
+
+    margin: 0 auto;
+    display: table;
+    text-align: center;
+
+    .custom-icon {
+
+        border: 2px solid #312FBC;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        padding-top: 7px;
+        margin: 0 auto;
+
+        i {
+            text-align: center;
+            margin: 0 auto;
+            display: table;
+            color: #312FBC;
+        }
     }
 }
 
