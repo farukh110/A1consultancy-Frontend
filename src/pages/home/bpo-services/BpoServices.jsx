@@ -78,17 +78,17 @@ const BpoServices = () => {
             <section className='bpo-services py-lg-5 py-md-5 py-5 mb-lg-0 mb-md-0 mb-0'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
+                        <div className='col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12'>
                             <FancyHeading title="BPO Servicing" />
                             <h2 className="section-title">Services We Offer To Our Valued Customers</h2>
                         </div>
-                        <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
-                            <div className="section-content mt-xl-5 mt-lg-5 mt-md-3">
+                        <div className='col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12'>
+                            <div className="section-content mt-xl-5 mt-lg-2 mt-md-3">
                                 <p>For Business Success, A1Consultancy offers results-focused services. Our team of dedicated customer care representatives strives to improve client satisfaction through strategic planning.</p>
                             </div>
                         </div>
                     </div>
-                    <div className='row mt-xl-5 mt-lg-5 mt-md-3 mt-sm-2 mt-5 service-default service-layout1 service-grid-layout1'>
+                    <div className='row mt-xl-5 mt-lg-3 mt-md-3 mt-sm-2 mt-5 service-default service-layout1 service-grid-layout1'>
                         {dataItems.map((item) =>
                             <ItemService
                                 key={item.id}

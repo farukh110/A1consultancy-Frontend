@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './index.scss';
 import InfoBox from './InfoBox';
 import FancyHeading from '../../../components/controls/fancy-heading/FancyHeading';
-import bpoPerson from '../../../assets/images/bpo-person.png';
 import vision from '../../../assets/images/icons/icons8-call-center-50.png';
 import mission from '../../../assets/images/icons/icons8-money-bag-50.png';
 import work from '../../../assets/images/icons/icons8-positive-dynamic-50.png';

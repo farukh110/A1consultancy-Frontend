@@ -12,6 +12,7 @@
 
     .info-box {
         position: relative;
+        z-index: 1;
 
         .info-title {
             font-size: 24px;
@@ -132,6 +133,32 @@
             .info-item {
                 padding: 35px 10px 20px 30px;
                 height: 300px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+
+    .what-we-do {
+
+        .info-style4 {
+
+            .info-item {
+                padding: 30px 20px 20px 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+    .what-we-do {
+
+        .info-style4 {
+
+            .info-item {
+                padding: 30px 20px 20px 30px;
             }
         }
     }
