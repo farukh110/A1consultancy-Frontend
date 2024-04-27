@@ -4,10 +4,20 @@ import Select from "react-select";
 import 'react-phone-input-2/lib/style.css';
 import axios from 'axios';
 import { useFormik } from 'formik';
+import emailjs from '@emailjs/browser';
 import * as Yup from 'yup';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './index.scss';
 
 const ContactForm = () => {
+
+    const YOUR_SERVICE_ID = 'service_2ksgqrm';
+    const YOUR_TEMPLATE_ID = 'template_n933nx8';
+    const YOUR_USER_ID = 'eNWLt7KJY04il3EZk';
+
+    // const public_key = 'eNWLt7KJY04il3EZk';
+    // const private_key = 'c-KX7uV9nVNpbFQylqI8E';
 
     const [countries, setCountries] = useState([]);
     const [selectedCountry, setSelectedCountry] = useState({ label: "United States", value: "US" });  // Set default to USA
@@ -50,9 +60,25 @@ const ContactForm = () => {
             selectedCountry: { label: "United States", value: "US" },  // Add selectedCountry to initialValues
         },
         validationSchema: validationSchema,
-        onSubmit: (values) => {
-            // Handle form submission logic here
-            console.log('Form values:', values);
+        onSubmit: (values, { resetForm }) => {
+            // Send email using EmailJS
+            emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, {
+                from_name: values.FirstName,
+                reply_to: values.Email,
+                phone: values.phone,
+                country: values.selectedCountry.label,
+                message: values.description,
+            }, YOUR_USER_ID)
+                .then((response) => {
+                    console.log('Email sent successfully:', response);
+                    // Reset form after successful submission
+                    toast.success("Email sent successfully");
+                    resetForm();
+                })
+                .catch((error) => {
+                    console.error('Email sending failed:', error);
+                    toast.error("Email sending failed");
+                });
         },
     });
 
@@ -61,47 +87,6 @@ const ContactForm = () => {
             <div className='container form-section my-5'>
 
                 <div className='row justify-content-center'>
-
-                    {/* <div className="col-md-10 p-lg-5 p-4 btn-form-bord">
-                        <div className="d-flex">
-                            <div className="flex-shrink-0">
-                                <i className="fa-solid fa-phone-volume fa-2xl contact-email header-call-icon" />
-                            </div>
-                            <div className="flex-grow-1 ms-3">
-                                <a href="tel:123-456-7891" className="h3 text-decoration-none">
-                                    123-456-7891
-                                </a>
-                            </div>
-                        </div>
-                        <div className="space30" />
-                        <div className="space30" />
-                        <div className="d-flex">
-                            <div className="flex-shrink-0">
-                                <i className="fa-regular fa-envelope  contact-email" />
-                            </div>
-                            <div className="flex-grow-1 ms-3">
-                                <a href="mailto:info@a1consultancy.com" className="h3 text-decoration-none">
-                                    Info@a1consultancy.com
-                                </a>
-                            </div>
-                        </div>
-                        <div className="space30" />
-                        <div className="d-flex">
-                            <div className="flex-shrink-0">
-                                <i className="fa-solid fa-location-dot contact-email" />
-                            </div>
-                            <div className="flex-grow-1 ms-3">
-
-                                <h3>36 Engle Road,
-                                    Paramus,
-                                    New Jersey 07652, USA</h3>
-
-                                <p></p>
-                                <hr />
-                            </div>
-                        </div>
-                    </div> */}
-
 
                     <div className='col-md-8 col-10 shadow p-md-4 py-3 p-1'>
 
@@ -261,7 +246,8 @@ const ContactForm = () => {
 
                 </div>
 
-            </div >
+            </div>
+            <ToastContainer position="top-center" />
         </>
     )
 }
