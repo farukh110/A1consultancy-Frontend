@@ -122,6 +122,15 @@ footer {
 
 @media (max-width: 767px) {
 
+    footer {
+        .footer-inner {
+
+            .footer-top-area {
+                padding: 45px 0 20px;
+            }
+        }
+    }
+
     .copyright {
         text-align: center !important;
     }

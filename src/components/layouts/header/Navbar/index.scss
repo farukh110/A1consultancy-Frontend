@@ -176,10 +176,33 @@
 
 @media (max-width: 767px) {
 
+    .navbar-logo {
+        transform: translate(0%, 16%);
+    }
+
     .navbar {
         .logo {
-            width: 40%;
+            width: 35%;
         }
+    }
+
+    .dropdown-menu.show {
+        width: 100%;
+    }
+
+    .bm-menu-wrap {
+
+        display: none !important;
+    }
+
+    .bm-overlay {
+
+        display: none !important;
+    }
+
+    .bm-burger-button {
+
+        display: none !important;
     }
 }
 
@@ -204,12 +227,12 @@
     }
 
     .navbar-logo {
-        top: -15px;
+        top: 5px !important;
     }
 
     .navbar {
         .logo {
-            width: 45%;
+            width: 40%;
         }
     }
 
