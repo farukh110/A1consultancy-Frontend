@@ -9,6 +9,7 @@ import * as Yup from 'yup';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './index.scss';
+import GlobeWorld from '../globe/GlobeWorld';
 
 const ContactForm = () => {
 
@@ -88,7 +89,7 @@ const ContactForm = () => {
 
                 <div className='row justify-content-center'>
 
-                    <div className='col-md-8 col-10 shadow p-md-4 py-3 p-1'>
+                    <div className='col-md-6 col-10 shadow p-md-4 py-3 p-1'>
 
                         <form
                             name="smallform"
@@ -186,6 +187,12 @@ const ContactForm = () => {
                             </div>
 
                         </form>
+                    </div>
+
+                    <div className='col-md-6'>
+
+                        <GlobeWorld />
+
                     </div>
 
                     <div className='col-md-8 col-10 p-md-4 py-3 p-1'>

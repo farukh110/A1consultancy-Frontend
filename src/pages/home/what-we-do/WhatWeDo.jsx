@@ -79,36 +79,44 @@ const WhatWeDo = () => {
 
                         </div>
 
-                        <div className='row mt-5'>
+                        <div className='row mt-5 pb-4 justify-content-center'>
 
                             <div className='col-lg-6 col-md-6 col-12'>
 
-                                <FancyHeading title="What We Do" />
+                                <FancyHeading className="mx-auto d-table" title="What We Do" />
 
-                                <div className="section-content">
+                                <div className="section-content mt-md-5">
 
-                                    <ul>
-                                        <li>Use advanced technology</li>
-                                        <li>Understand your needs</li>
-                                        <li>100% satisfaction guaranteed</li>
-                                        <li> Qualified leads </li>
-                                        <li> Affordable solutions </li>
-                                        <li> Building customer bond </li>
-                                        <li> optimal benefit </li>
-                                        <li> Enjoy security</li>
-                                        <li> Provide excellent service.</li>
+                                    <div className='row'>
 
-                                    </ul>
+                                        <div className='col-md-6'>
+
+                                            <ul className="list-unstyled mx-auto d-table">
+                                                <li> <i className="bi bi-check-circle"></i> Use advanced technology</li>
+                                                <li> <i className="bi bi-check-circle"></i> Understand your needs</li>
+                                                <li> <i className="bi bi-check-circle"></i> 100% satisfaction guaranteed</li>
+                                                <li> <i className="bi bi-check-circle"></i> Qualified leads </li>
+                                                <li> <i className="bi bi-check-circle"></i> Affordable solutions </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div className='col-md-6'>
+
+                                            <ul className="list-unstyled mx-auto d-table">
+                                                <li> <i className="bi bi-check-circle"></i> Building customer bond </li>
+                                                <li> <i className="bi bi-check-circle"></i> optimal benefit </li>
+                                                <li> <i className="bi bi-check-circle"></i> Enjoy security</li>
+                                                <li> <i className="bi bi-check-circle"></i> Provide excellent service.</li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
 
                                 </div>
 
-
-                            </div>
-
-                            <div className='col-lg-6 col-md-6 col-12'>
-
-                                {/* <img className='img-fluid' src={bpoPerson} alt="" /> */}
-                                <GlobeWorld className="full-width-globe" />
 
                             </div>
 
