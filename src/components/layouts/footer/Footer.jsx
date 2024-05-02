@@ -94,9 +94,9 @@ const Footer = () => {
                                             <h3 className="widgettitle ">Contact Us</h3>{" "}
                                             <div className="textwidget">
                                                 <p>
-                                                    Cell : +123-456-7891 <br /> Email: Info@a1consultancy.com
+                                                    Cell : 0326 786 2663 <br /> Email: Info@a1consultancy.com
                                                     <br />
-                                                    Locations: New Jersey, USA Karachi, Pak
+                                                    Locations: E 1/1 Erum Heights, Block 13, Gulistan e Jauhar, Karachi
                                                 </p>
                                                 <p className="rtin-des" />
 

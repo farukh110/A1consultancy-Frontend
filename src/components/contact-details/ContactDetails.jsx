@@ -16,15 +16,15 @@ const ContactDetails = () => {
                         <ul className="corporate-address ps-0">
                             <li>
                                 <i className="fas fa-map-marker-alt" />
-                                36 Engle Road, Paramus, New Jersey 07652, USA
+                                E 1/1 Erum Heights, Block 13, <br /> Gulistan e Jauhar, Karachi
                             </li>
                             <li>
                                 <i className="fas fa-phone-alt" />
-                                <a href="tel:(+92) 330 7827276">123-456-7891</a>
+                                <a href="tel:0326 7862663">0326 7862663</a>
                             </li>
                             <li>
                                 <i className="far fa-envelope" />
-                                <a href="mailto:support@localhost">Info@a1consultancy.com</a>
+                                <a href="mailto:Info@a1consultancy.com">Info@a1consultancy.com</a>
                             </li>{" "}
                         </ul>
                     </div>{" "}

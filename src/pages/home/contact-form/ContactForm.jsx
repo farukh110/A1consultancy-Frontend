@@ -209,7 +209,7 @@ const ContactForm = () => {
 
                                     <h5 className='mt-md-2'> Location </h5>
 
-                                    <p> 36 Engle Road, Paramus, New Jersey 07652, USA </p>
+                                    <p> E 1/1 Erum Heights, Block 13, Gulistan e Jauhar, Karachi </p>
 
                                 </div>
 
@@ -225,7 +225,7 @@ const ContactForm = () => {
 
                                     <h5 className='mt-md-2'> 24/7 Help </h5>
 
-                                    <p> 123-456-7891 </p>
+                                    <a className='text-dark text-decoration-none' href='tel: 0326 7862663'> 0326 7862663 </a>
 
                                 </div>
 
