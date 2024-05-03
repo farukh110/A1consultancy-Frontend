@@ -79,7 +79,7 @@ const WhatWeDo = () => {
 
                         </div>
 
-                        <div className='row mt-5 pb-4 justify-content-center'>
+                        <div className='row mt-5 pb-5 justify-content-center'>
 
                             <div className='col-lg-6 col-md-6 col-12'>
 
@@ -87,11 +87,11 @@ const WhatWeDo = () => {
 
                                 <div className="section-content mt-md-5">
 
-                                    <div className='row'>
+                                    <div className='row justify-content-center'>
 
-                                        <div className='col-md-6'>
+                                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-6 col-10'>
 
-                                            <ul className="list-unstyled mx-auto d-table">
+                                            <ul className="list-unstyled mb-0 mx-auto d-table w-xl-auto w-lg-auto w-md-auto w-sm-auto w-100">
                                                 <li> <i className="bi bi-check-circle"></i> Use advanced technology</li>
                                                 <li> <i className="bi bi-check-circle"></i> Understand your needs</li>
                                                 <li> <i className="bi bi-check-circle"></i> 100% satisfaction guaranteed</li>
@@ -101,9 +101,9 @@ const WhatWeDo = () => {
 
                                         </div>
 
-                                        <div className='col-md-6'>
+                                        <div className='col-xl-6 col-lg-6 col-md-6 col-sm-6 col-10'>
 
-                                            <ul className="list-unstyled mx-auto d-table">
+                                            <ul className="list-unstyled mb-0 mx-auto d-table w-xl-auto w-lg-auto w-md-auto w-sm-auto w-100">
                                                 <li> <i className="bi bi-check-circle"></i> Building customer bond </li>
                                                 <li> <i className="bi bi-check-circle"></i> optimal benefit </li>
                                                 <li> <i className="bi bi-check-circle"></i> Enjoy security</li>
