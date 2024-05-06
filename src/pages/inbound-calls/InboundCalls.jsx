@@ -25,23 +25,17 @@ const InboundCalls = () => {
 
                 <div className="row">
 
-                    <div className="col-md-3">
+                    {/* <div className="col-md-3">
 
                         <ContactDetails />
 
-                    </div>
+                    </div> */}
 
-                    <div className="col-md-9">
+                    <div className="col-md-12">
 
                         <div className="content-area">
 
-                            <img
-                                src="https://starbpo.com.pk/wp-content/uploads/2021/10/inbound-call-center.jpg"
-                                className="img-fluid"
-                                alt=""
-                            />
-
-                            <h2 className="mt-md-4"> Inbound Calling Services </h2>
+                            <h2 className="mt-md-0"> Inbound Calling Services </h2>
 
                             <p>
                                 Inbound calls refer to customer phone calls to a company's customer service or support team. These calls are usually managed by the organization's call center or help desk, which then addresses the consumer's complaint or request. Handling incoming calls is fundamental for customer service teams aiming to enhance the customer experience.
@@ -51,16 +45,7 @@ const InboundCalls = () => {
 
                             <div className="row">
 
-                                <div className="col-md-4">
-                                    <img
-                                        src="https://starbpo.com.pk/wp-content/uploads/2021/10/character-call-center-logistics-service-vector-14328808.png"
-                                        className="img-fluid"
-                                        alt=""
-                                    />
-
-                                </div>
-
-                                <div className="col-md-8">
+                                <div className="col-md-12">
 
                                     <h2> Why Choose a1Consultancy Inbound Service?  </h2>
 

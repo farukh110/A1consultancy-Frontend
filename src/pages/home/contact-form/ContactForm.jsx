@@ -225,7 +225,7 @@ const ContactForm = () => {
 
                                     <h5 className='mt-md-2'> 24/7 Help </h5>
 
-                                    <a className='text-dark text-decoration-none' href='tel: 0326 7862663'> 0326 7862663 </a>
+                                    <a className='text-dark text-decoration-none' href='tel: 923267862663'> 92 326 786 AONE (2663) </a>
 
                                 </div>
 
@@ -241,7 +241,7 @@ const ContactForm = () => {
 
                                     <h5 className='mt-md-2'> Email Us </h5>
 
-                                    <p> Info@a1consultancy.com </p>
+                                    <p> <a className='text-decoration-none text-dark' href="mailto: info@a1-consultancy.com"> info@a1-consultancy.com </a> </p>
 
                                 </div>
 

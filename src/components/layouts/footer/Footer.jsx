@@ -94,7 +94,7 @@ const Footer = () => {
                                             <h3 className="widgettitle ">Contact Us</h3>{" "}
                                             <div className="textwidget">
                                                 <p>
-                                                    Cell : 0326 786 2663 <br /> Email: Info@a1consultancy.com
+                                                    Cell : <a className="text-decoration-none text-dark" href="https://wa.me/+923267862663"> +92 326 786 AONE (2663) </a> <br /> Email: <a className="text-decoration-none text-dark" href="mailto: info@a1-consultancy.com">info@a1-consultancy.com</a>
                                                     <br />
                                                     Locations: E 1/1 Erum Heights, Block 13, Gulistan e Jauhar, Karachi
                                                 </p>

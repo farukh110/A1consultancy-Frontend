@@ -25,23 +25,11 @@ const OutboundCalls = () => {
 
                 <div className="row">
 
-                    <div className="col-md-3">
-
-                        <ContactDetails />
-
-                    </div>
-
-                    <div className="col-md-9">
+                    <div className="col-md-12">
 
                         <div className="content-area">
 
-                            <img
-                                src="https://starbpo.com.pk/wp-content/uploads/2021/10/Call-Center.jpg"
-                                className="img-fluid"
-                                alt=""
-                            />
-
-                            <h2 className="mt-md-4"> Outbound Calling Services </h2>
+                            <h2 className="mt-md-0"> Outbound Calling Services </h2>
 
                             <p>
                                 An outbound call is a call made by a call center agent to a customer as a representative of a call center or client. An outbound call is one important component of business operations, where your customer support agents or sales representatives contact third parties. The calls are directed toward customers, prospects, and other businesses. Lead generation, telemarketing, and fundraising are the main goals of cold-calling potential clients.
@@ -49,16 +37,7 @@ const OutboundCalls = () => {
 
                             <div className="row">
 
-                                <div className="col-md-4">
-                                    <img
-                                        src="https://starbpo.com.pk/wp-content/uploads/2021/10/outbound-call-center-with-smart-features.svg"
-                                        className="img-fluid"
-                                        alt=""
-                                    />
-
-                                </div>
-
-                                <div className="col-md-8">
+                                <div className="col-md-12">
 
                                     <h2> Why Choose a1Consultancy Outbound Service? </h2>
 

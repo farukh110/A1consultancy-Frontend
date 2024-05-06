@@ -35,7 +35,7 @@ const CareersForm = () => {
 
     return (
         <>
-            <div className='container form-section my-5'>
+            <div className='container form-section my-5 pb-4'>
 
                 <div className='row justify-content-center'>
 
@@ -52,7 +52,7 @@ const CareersForm = () => {
                                         aria-expanded="true"
                                         aria-controls="collapseOne"
                                     >
-                                        Call Center Agents | BPO Agents
+                                        Business Development Executive
                                     </button>
                                 </h2>
                                 <div
@@ -62,55 +62,39 @@ const CareersForm = () => {
                                     data-bs-parent="#accordionExample"
                                 >
                                     <div className="accordion-body">
-                                        <strong>Content 1</strong>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="accordion-item">
-                                <h2 className="accordion-header" id="headingTwo">
-                                    <button
-                                        className="accordion-button collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo"
-                                        aria-expanded="false"
-                                        aria-controls="collapseTwo">
 
-                                        Frontend Developer
-                                    </button>
-                                </h2>
-                                <div
-                                    id="collapseTwo"
-                                    className="accordion-collapse collapse"
-                                    aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample"
-                                >
-                                    <div className="accordion-body">
-                                        <strong>Content 2</strong>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="accordion-item">
-                                <h2 className="accordion-header" id="headingThree">
-                                    <button
-                                        className="accordion-button collapsed"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree"
-                                        aria-expanded="false"
-                                        aria-controls="collapseThree"
-                                    >
-                                        Sales Executive
-                                    </button>
-                                </h2>
-                                <div
-                                    id="collapseThree"
-                                    className="accordion-collapse collapse"
-                                    aria-labelledby="headingThree"
-                                    data-bs-parent="#accordionExample"
-                                >
-                                    <div className="accordion-body">
-                                        <strong>Content 3</strong>
+                                        <strong>Job Summary/Objective:</strong>
+                                        <br />
+
+                                        You are responsible for helping the organization to acquire new customers and sell additional services. This will require you to be able to leverage your extensive industry knowledge and proven track record in driving business growth, expanding our BPO services, developing strategic partnerships, and conducting lead-generation campaigns.
+                                        <br />
+                                        You'll need to be able to contact potential clients to establish rapport and arrange meetings to close new business from cold calls and have convincing skills.
+                                        <br /><br />
+                                        <strong>Responsibilities & duties:</strong><br />
+                                        • Develop growth strategies and plans<br />
+                                        • Prepare/write business proposals<br />
+                                        • Increase client base<br />
+                                        • Negotiate with stakeholders<br />
+                                        • Manage and retain relationships with existing clients<br />
+                                        • Identify and map business strengths and customer needs<br />
+                                        • Draft and review contracts<br />
+                                        • Maintain in-depth knowledge of business products and value proposition<br />
+                                        • Research business opportunities and viable income streams<br />
+                                        • Follow industry trends locally and internationally<br />
+                                        • Report on successes and areas needing improvements<br />
+                                        <br />
+                                        <strong>Skills/Attributes required:</strong><br />
+                                        • Experience with the design and implementation of business development strategies<br />
+                                        • Ability to flourish with minimal guidance, and handle uncertainty.<br />
+                                        • Strong stakeholder management skills<br />
+                                        • Ability to manage complex projects and multi-task.<br />
+                                        • Excellent organizational and negotiation skills.<br />
+                                        • Excellent verbal and written communication skills<br />
+                                        • Experience working with US companies (preferred)
+                                        <br /><br />
+                                        <strong>Qualifications/Experience required:</strong><br />
+                                        • Bachelor’s Degree preferably in Business Development or Sales & Marketing<br />
+                                        • 3 to 4 years of experience in Business Development (preferred)
                                     </div>
                                 </div>
                             </div>

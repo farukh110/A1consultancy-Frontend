@@ -26,23 +26,11 @@ const LeadGeneration = () => {
 
                 <div className="row">
 
-                    <div className="col-md-3">
-
-                        <ContactDetails />
-
-                    </div>
-
-                    <div className="col-md-9">
+                    <div className="col-md-12">
 
                         <div className="content-area">
 
-                            <img
-                                src={lead}
-                                className="img-fluid"
-                                alt=""
-                            />
-
-                            <h2 className="mt-md-4"> Lead Generation - The First Step For Business Growth </h2>
+                            <h2 className="mt-md-0"> Lead Generation - The First Step For Business Growth </h2>
 
                             <p>
                                 Do you want to improve your revenue? Utilizing our services is your best decision. We offer an ongoing flow of high-quality leads with greater conversion rates because we specialize in smart lead-generation strategies that fit your company.
@@ -55,16 +43,7 @@ const LeadGeneration = () => {
 
                             <div className="row">
 
-                                <div className="col-md-3">
-                                    <img
-                                        src="https://starbpo.com.pk/wp-content/uploads/2021/10/outbound-call-center-with-smart-features.svg"
-                                        className="img-fluid"
-                                        alt=""
-                                    />
-
-                                </div>
-
-                                <div className="col-md-8">
+                                <div className="col-md-12">
 
                                     <h2> A1Consultantancy Lead Generation Services </h2>
 
