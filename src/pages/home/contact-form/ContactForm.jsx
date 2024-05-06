@@ -85,7 +85,7 @@ const ContactForm = () => {
 
     return (
         <>
-            <div className='container form-section my-5'>
+            <div className='container form-section my-5 py-md-0 py-5 pb-0'>
 
                 <div className='row justify-content-center'>
 

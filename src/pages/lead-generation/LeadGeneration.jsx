@@ -22,7 +22,7 @@ const LeadGeneration = () => {
                 bannerContent={null}
             />
 
-            <div className="container py-md-5">
+            <div className="container py-md-5 py-4">
 
                 <div className="row">
 

@@ -52,23 +52,16 @@
 
 }
 
-
-
 .slider-content h1 {
 
     font-size: 40px;
-
 }
-
-
 
 .slider-content h1 span {
 
     font-size: 30px;
 
 }
-
-
 
 .slider-content p {
 
@@ -81,21 +74,15 @@
 
 }
 
-
-
 .slider-content-2 h1 {
 
     font-size: 50px;
     line-height: 60px;
 }
 
-
-
 .slider-active .slick-arrow:hover {
     color: #FDC800;
 }
-
-
 
 .slider-active .slick-dots {
 
@@ -107,13 +94,10 @@
 
 }
 
-
-
 .slider-active .slick-dots li {
 
     display: inline-block;
     margin-right: 10px;
-
 }
 
 .slider-active .slick-dots li:last-child {
@@ -121,8 +105,6 @@
     margin-right: 0;
 
 }
-
-
 
 .slider-active .slick-dots li button {
 
@@ -136,23 +118,17 @@
 
 }
 
-
-
 .slider-active .slick-dots li.slick-active button {
 
     width: 40px;
 
 }
 
-
-
 .slider-active-2 .slick-dots li.slick-active button {
 
     border: 1px solid #FDC800;
 
 }
-
-
 
 .slider-active .slick-arrow {
 
@@ -274,7 +250,7 @@
 
 @media (max-width: 767px) {
     .slider-height {
-        min-height: 580px;
+        min-height: 380px;
     }
 
     .slider-content h1 span {
@@ -284,6 +260,22 @@
     .slider-content h1 {
         font-size: 30px;
         line-height: 43px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .slider-height {
+        min-height: 200px;
+    }
+
+    .slider-content h1 span {
+        font-size: 25px !important;
+    }
+
+    .slider-content h1 {
+        font-size: 25px !important;
     }
 
 }
