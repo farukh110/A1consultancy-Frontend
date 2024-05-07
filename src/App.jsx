@@ -13,6 +13,7 @@ import LeadGeneration from './pages/lead-generation/LeadGeneration';
 import Contact from './pages/contact/Contact';
 import Careers from './pages/careers/Careers';
 import AboutUs from './pages/about/AboutUs';
+import TawkMessenger from '@tawk.to/tawk-messenger-react';
 
 const App = () => {
   return (
@@ -34,6 +35,10 @@ const App = () => {
           <Route exact path="/contact-us" element={<Contact />} />
         </Routes>
         <Footer />
+        <TawkMessenger
+          propertyId="663a57189a809f19fb2e61fd"
+          widgetId="default"
+        />
       </div>
     </Router>
   )
