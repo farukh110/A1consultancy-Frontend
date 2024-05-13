@@ -3,6 +3,7 @@ import bannerImage from '../../assets/images/services/lead-generation-2.jpg';
 import lead from '../../assets/images/services/lead.jpg';
 import './index.scss';
 import ContactDetails from "../../components/contact-details/ContactDetails";
+import { Helmet } from "react-helmet-async";
 
 const LeadGeneration = () => {
 
@@ -13,6 +14,27 @@ const LeadGeneration = () => {
 
     return (
         <div>
+
+            <Helmet>
+
+                <title> Lead Generation </title>
+                <meta name="description" content="Do you want to improve your revenue? Utilizing our services is your best decision. We offer an ongoing flow of high-quality leads with greater conversion rates because we specialize in smart lead-generation strategies that fit your company." />
+                <meta name="keywords" content="Lead generation, revenue improvement, high-quality leads, conversion rates, BPO services, digital marketing, A1Consultancy, strategic planning, innovative approaches" />
+                <meta name="author" content="A1Consultancy" />
+                <meta name="robots" content="all" />
+                <meta name="revisit-after" content="1 Days" />
+                <meta property="og:locale" content="en-US" />
+                <meta property="og:site_name" content="A1Consultancy" />
+                <meta property="og:image" content="https://a1-consultancy.com/assets/a1-logo1-IFYzz0lG.png" />
+                <meta property="og:image:width" content="180" />
+                <meta property="og:image:height" content="50" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Lead Generation - " />
+                <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
+                <meta property="og:description" content="Do you want to improve your revenue? Utilizing our services is your best decision. We offer an ongoing flow of high-quality leads with greater conversion rates because we specialize in smart lead-generation strategies that fit your company." />
+                <meta property="og:url" content="https://a1-consultancy.com/" />
+
+            </Helmet>
 
             <Banner
                 bannerImage={bannerImage}

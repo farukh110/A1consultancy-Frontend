@@ -2,6 +2,7 @@ import Banner from "../home/main-banner/Banner";
 import bannerImage from '../../assets/images/services/outbound-calls.jpg';
 import './index.scss';
 import ContactDetails from "../../components/contact-details/ContactDetails";
+import { Helmet } from "react-helmet-async";
 
 const OutboundCalls = () => {
 
@@ -12,6 +13,27 @@ const OutboundCalls = () => {
 
     return (
         <div>
+
+            <Helmet>
+
+                <title> Outbound Calls Services </title>
+                <meta name="description" content="An outbound call is a call made by a call center agent to a customer as a representative of a call center or client. An outbound call is one important component of business operations, where your customer support agents or sales representatives contact third parties. The calls are directed toward customers, prospects, and other businesses. Lead generation, telemarketing, and fundraising are the main goals of cold-calling potential clients." />
+                <meta name="keywords" content="Outbound calls services, outbound calling, call center, customer support, sales representatives, lead generation, telemarketing, fundraising, A1Consultancy, BPO services, digital marketing, strategic planning, innovative approaches" />
+                <meta name="author" content="A1Consultancy" />
+                <meta name="robots" content="all" />
+                <meta name="revisit-after" content="1 Days" />
+                <meta property="og:locale" content="en-US" />
+                <meta property="og:site_name" content="A1Consultancy" />
+                <meta property="og:image" content="https://a1-consultancy.com/assets/a1-logo1-IFYzz0lG.png" />
+                <meta property="og:image:width" content="180" />
+                <meta property="og:image:height" content="50" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Outbound Calls Services - " />
+                <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
+                <meta property="og:description" content="An outbound call is a call made by a call center agent to a customer as a representative of a call center or client. An outbound call is one important component of business operations, where your customer support agents or sales representatives contact third parties. The calls are directed toward customers, prospects, and other businesses. Lead generation, telemarketing, and fundraising are the main goals of cold-calling potential clients." />
+                <meta property="og:url" content="https://a1-consultancy.com/" />
+
+            </Helmet>
 
             <Banner
                 bannerImage={bannerImage}

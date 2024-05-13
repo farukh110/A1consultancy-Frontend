@@ -1,10 +1,32 @@
 import React from 'react';
 import Page from '../generic-page/Page';
 import banner from '../../assets/images/inner-services/contact-center.jpg';
+import { Helmet } from 'react-helmet-async';
 
 const ContactCenter = () => {
     return (
+
         <div>
+            <Helmet>
+
+                <title> A-OneConsultancy: Your Premier Contact Center Outsourcing Partner </title>
+                <meta name="description" content="Discover unparalleled excellence in contact center services with A-OneConsultancy. As your trusted outsourcing partner, we prioritize customer interactions with precision and professionalism. Choose us for seamless management and guaranteed success." />
+                <meta name="keywords" content="Contact center outsourcing, Customer interaction management, Professional customer service, Outsourcing partner, Contact center solutions, Customer care services, Business outsourcing, Reliable outsourcing ally, Customer support expertise, Contact center professionalism." />
+                <meta name="author" content="A1Consultancy" />
+                <meta name="robots" content="all" />
+                <meta name="revisit-after" content="1 Days" />
+                <meta property="og:locale" content="en-US" />
+                <meta property="og:site_name" content="A1Consultancy" />
+                <meta property="og:image" content="https://a1-consultancy.com/assets/a1-logo1-IFYzz0lG.png" />
+                <meta property="og:image:width" content="180" />
+                <meta property="og:image:height" content="50" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="A-OneConsultancy: Your Premier Contact Center Outsourcing Partner - " />
+                <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
+                <meta property="og:description" content="Discover unparalleled excellence in contact center services with A-OneConsultancy. As your trusted outsourcing partner, we prioritize customer interactions with precision and professionalism. Choose us for seamless management and guaranteed success." />
+                <meta property="og:url" content="https://a1-consultancy.com/" />
+
+            </Helmet>
             <Page
                 bannerImage={banner}
                 mediumText={null}

@@ -1,10 +1,31 @@
 import React from 'react';
 import Page from '../generic-page/Page';
 import banner from '../../assets/images/inner-services/digital-marketing.jpg';
+import { Helmet } from 'react-helmet-async';
 
 const Digital = () => {
     return (
         <div>
+            <Helmet>
+
+                <title> Digital Marketing Agency | Best digital marketing solutions Near Me </title>
+                <meta name="description" content="A1Consultancy best service provider digital marketing solutions agency in USA. We are experts in Email Marketing, Social Media Advertising, SEO, and SEM." />
+                <meta name="keywords" content="Digital Marketing Company, Digital Marketing Solutions, Digital Marketing Agency, Digital Marketing Services, Online Marketing Agency, Digital Marketing Agency Near Me, Online Marketing Solutions" />
+                <meta name="author" content="A1Consultancy" />
+                <meta name="robots" content="all" />
+                <meta name="revisit-after" content="1 Days" />
+                <meta property="og:locale" content="en-US" />
+                <meta property="og:site_name" content="A1Consultancy" />
+                <meta property="og:image" content="https://a1-consultancy.com/assets/a1-logo1-IFYzz0lG.png" />
+                <meta property="og:image:width" content="180" />
+                <meta property="og:image:height" content="50" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Digital Marketing Agency | Best digital marketing solutions Near Me - " />
+                <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
+                <meta property="og:description" content="A1Consultancy best service provider digital marketing solutions agency in USA. We are experts in Email Marketing, Social Media Advertising, SEO, and SEM." />
+                <meta property="og:url" content="https://a1-consultancy.com/" />
+
+            </Helmet>
             <Page
                 bannerImage={banner}
                 mediumText={null}

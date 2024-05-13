@@ -1,10 +1,33 @@
 import Page from '../generic-page/Page';
 import about from '../../assets/images/about/about.jpg';
 import BpoServices from '../home/bpo-services/BpoServices';
+import { Helmet } from 'react-helmet-async';
 
 const AboutUs = () => {
     return (
         <>
+
+            <Helmet>
+
+                <title> About Us </title>
+                <meta name="description" content="We are fully committed to ensuring your success. Our professionals excel in contact center services, lead generation, and digital marketing. " />
+                <meta name="keywords" content="For exceptional BPO and digital marketing services, A1Consultancy delivers tailored solutions geared towards business success. Our dedicated team strives to enhance client satisfaction and achieve tangible results through strategic planning and innovative approaches." />
+                <meta name="author" content="A1Consultancy" />
+                <meta name="robots" content="all" />
+                <meta name="revisit-after" content="1 Days" />
+                <meta property="og:locale" content="en-US" />
+                <meta property="og:site_name" content="A1Consultancy" />
+                <meta property="og:image" content="https://a1-consultancy.com/assets/a1-logo1-IFYzz0lG.png" />
+                <meta property="og:image:width" content="180" />
+                <meta property="og:image:height" content="50" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="About Us - " />
+                <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
+                <meta property="og:description" content="We are fully committed to ensuring your success. Our professionals excel in contact center services, lead generation, and digital marketing. " />
+                <meta property="og:url" content="https://a1-consultancy.com/" />
+
+            </Helmet>
+
             <Page
                 bannerImage={about}
                 mediumText={null}

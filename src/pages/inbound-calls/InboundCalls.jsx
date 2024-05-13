@@ -2,6 +2,7 @@ import Banner from "../home/main-banner/Banner";
 import bannerImage from '../../assets/images/services/inbound-calls.jpg';
 import './index.scss';
 import ContactDetails from "../../components/contact-details/ContactDetails";
+import { Helmet } from "react-helmet-async";
 
 const InboundCalls = () => {
 
@@ -12,6 +13,27 @@ const InboundCalls = () => {
 
     return (
         <div>
+
+            <Helmet>
+
+                <title> Inbound Calls Services </title>
+                <meta name="description" content="Inbound calls refer to customer phone calls to a company's customer service or support team. These calls are usually managed by the organization's call center or help desk, which then addresses the consumer's complaint or request. Handling incoming calls is fundamental for customer service teams aiming to enhance the customer experience." />
+                <meta name="keywords" content="Inbound calls services, customer service, call center, help desk, customer support, inbound call management, customer experience, BPO services, digital marketing, A1Consultancy, business success, strategic planning, innovative approaches" />
+                <meta name="author" content="A1Consultancy" />
+                <meta name="robots" content="all" />
+                <meta name="revisit-after" content="1 Days" />
+                <meta property="og:locale" content="en-US" />
+                <meta property="og:site_name" content="A1Consultancy" />
+                <meta property="og:image" content="https://a1-consultancy.com/assets/a1-logo1-IFYzz0lG.png" />
+                <meta property="og:image:width" content="180" />
+                <meta property="og:image:height" content="50" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Inbound Calls Services - " />
+                <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
+                <meta property="og:description" content="Inbound calls refer to customer phone calls to a company's customer service or support team. These calls are usually managed by the organization's call center or help desk, which then addresses the consumer's complaint or request. Handling incoming calls is fundamental for customer service teams aiming to enhance the customer experience." />
+                <meta property="og:url" content="https://a1-consultancy.com/" />
+
+            </Helmet>
 
             <Banner
                 bannerImage={bannerImage}
