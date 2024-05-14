@@ -32,6 +32,8 @@ const OutboundCalls = () => {
                 <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
                 <meta property="og:description" content="An outbound call is a call made by a call center agent to a customer as a representative of a call center or client. An outbound call is one important component of business operations, where your customer support agents or sales representatives contact third parties. The calls are directed toward customers, prospects, and other businesses. Lead generation, telemarketing, and fundraising are the main goals of cold-calling potential clients." />
                 <meta property="og:url" content="https://a1-consultancy.com/" />
+                <link rel="canonical" href="/outbound-calls" />
+
 
             </Helmet>
 

@@ -32,6 +32,7 @@ const InboundCalls = () => {
                 <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
                 <meta property="og:description" content="Inbound calls refer to customer phone calls to a company's customer service or support team. These calls are usually managed by the organization's call center or help desk, which then addresses the consumer's complaint or request. Handling incoming calls is fundamental for customer service teams aiming to enhance the customer experience." />
                 <meta property="og:url" content="https://a1-consultancy.com/" />
+                <link rel="canonical" href="/inbound-calls" />
 
             </Helmet>
 

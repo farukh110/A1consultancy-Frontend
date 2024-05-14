@@ -24,6 +24,7 @@ const Digital = () => {
                 <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
                 <meta property="og:description" content="A1Consultancy best service provider digital marketing solutions agency in USA. We are experts in Email Marketing, Social Media Advertising, SEO, and SEM." />
                 <meta property="og:url" content="https://a1-consultancy.com/" />
+                <link rel="canonical" href="/digital-marketing" />
 
             </Helmet>
             <Page

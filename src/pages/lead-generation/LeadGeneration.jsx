@@ -33,6 +33,7 @@ const LeadGeneration = () => {
                 <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
                 <meta property="og:description" content="Do you want to improve your revenue? Utilizing our services is your best decision. We offer an ongoing flow of high-quality leads with greater conversion rates because we specialize in smart lead-generation strategies that fit your company." />
                 <meta property="og:url" content="https://a1-consultancy.com/" />
+                <link rel="canonical" href="/lead-generation" />
 
             </Helmet>
 

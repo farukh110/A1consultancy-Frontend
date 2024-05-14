@@ -25,6 +25,7 @@ const Careers = () => {
                 <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
                 <meta property="og:description" content="Explore open job opportunities at A1Consultancy." />
                 <meta property="og:url" content="https://a1-consultancy.com/" />
+                <link rel="canonical" href="/careers" />
 
             </Helmet>
 

@@ -25,6 +25,7 @@ const AboutUs = () => {
                 <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
                 <meta property="og:description" content="We are fully committed to ensuring your success. Our professionals excel in contact center services, lead generation, and digital marketing. " />
                 <meta property="og:url" content="https://a1-consultancy.com/" />
+                <link rel="canonical" href="/about-us" />
 
             </Helmet>
 

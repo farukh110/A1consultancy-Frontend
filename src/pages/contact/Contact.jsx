@@ -25,6 +25,7 @@ const Contact = () => {
                 <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
                 <meta property="og:description" content="Contact A1Consultancy to fulfill all of your digital requirements from the start to finish. We are always here to help beyond services. Contact us here." />
                 <meta property="og:url" content="https://a1-consultancy.com/" />
+                <link rel="canonical" href="/contact-us" />
 
             </Helmet>
 

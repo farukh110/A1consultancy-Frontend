@@ -26,11 +26,8 @@ const App = () => {
           <Route exact path="/inbound-calls" element={<InboundCalls />} />
           <Route exact path="/outbound-calls" element={<OutboundCalls />} />
           <Route exact path="/lead-generation" element={<LeadGeneration />} />
-          <Route exact path="/web-development" element={<Web />} />
           <Route exact path="/digital-marketing" element={<Digital />} />
           <Route exact path="/contact-center-services" element={<ContactCenter />} />
-          <Route exact path="/back-office-services" element={<BackOffice />} />
-          <Route exact path="/video-monitoring-surveillance" element={<VideoMonitoring />} />
           <Route exact path="/careers" element={<Careers />} />
           <Route exact path="/contact-us" element={<Contact />} />
         </Routes>

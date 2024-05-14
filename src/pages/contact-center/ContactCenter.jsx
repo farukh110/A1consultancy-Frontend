@@ -25,6 +25,7 @@ const ContactCenter = () => {
                 <meta property="og:title" content="A1Consultancy Company in USA | BPO Services" />
                 <meta property="og:description" content="Discover unparalleled excellence in contact center services with A-OneConsultancy. As your trusted outsourcing partner, we prioritize customer interactions with precision and professionalism. Choose us for seamless management and guaranteed success." />
                 <meta property="og:url" content="https://a1-consultancy.com/" />
+                <link rel="canonical" href="/contact-center-services" />
 
             </Helmet>
             <Page
