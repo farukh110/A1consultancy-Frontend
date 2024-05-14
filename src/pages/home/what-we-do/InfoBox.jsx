@@ -16,7 +16,7 @@ const InfoBox = (props) => {
                                     src={activeImg}
                                     height={82}
                                     width={82}
-                                    alt="figure"
+                                    alt={infoTitle}
                                 />
                             </div>
 
@@ -27,7 +27,7 @@ const InfoBox = (props) => {
                                     src={inActiveImg}
                                     height={82}
                                     width={82}
-                                    alt="figure"
+                                    alt={infoTitle}
                                     className="icon-small"
                                 /> : null}
 
@@ -40,7 +40,7 @@ const InfoBox = (props) => {
                                         height={150}
                                         src={thumbnail}
                                         className="attachment-thumbnail size-thumbnail wp-image-8318"
-                                        alt=""
+                                        alt={infoTitle}
                                     />
                                 </span>
                             </div>

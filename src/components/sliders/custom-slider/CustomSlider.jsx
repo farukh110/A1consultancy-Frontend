@@ -70,7 +70,7 @@ const CustomSlider = () => {
                 {content.map((slide, index) => (
                     <SwiperSlide key={index} style={{ backgroundImage: `url(${slide.image})` }}>
                         <div className="slide-content">
-                            <h2 dangerouslySetInnerHTML={{ __html: slide.title }}></h2>
+                            <h1 dangerouslySetInnerHTML={{ __html: slide.title }}></h1>
                             <p dangerouslySetInnerHTML={{ __html: slide.description }}></p>
                             <button className='btn btn-primary'>{slide.button}</button>
                         </div>

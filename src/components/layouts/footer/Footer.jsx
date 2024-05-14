@@ -121,7 +121,7 @@ const Footer = () => {
                                 <p className="ps-lg-4 ps-md-0 ps-0 mb-0">
                                     <span className="follow-us text-light">Follow us: </span>
                                     <span className='ms-2'>
-                                        <a className="bi bi-facebook text-light" href="/"></a>
+                                        <a className="bi bi-facebook text-light" href="https://www.facebook.com/profile.php?id=61558212837913"></a>
                                     </span>
 
                                     <span className='ms-2'>

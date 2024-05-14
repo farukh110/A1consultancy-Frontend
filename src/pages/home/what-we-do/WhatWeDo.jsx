@@ -5,7 +5,6 @@ import FancyHeading from '../../../components/controls/fancy-heading/FancyHeadin
 import vision from '../../../assets/images/icons/icons8-call-center-50.png';
 import mission from '../../../assets/images/icons/icons8-money-bag-50.png';
 import work from '../../../assets/images/icons/icons8-positive-dynamic-50.png';
-import GlobeWorld from '../globe/GlobeWorld';
 
 const WhatWeDo = () => {
 
@@ -13,7 +12,7 @@ const WhatWeDo = () => {
     const dataItems = [
         {
             id: 1,
-            activeImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_active.svg',
+            activeImg: null,
             inActiveImg: null,
             boxBg: '#C15D65',
             iconColor: '#fff',
@@ -25,7 +24,7 @@ const WhatWeDo = () => {
         },
         {
             id: 2,
-            activeImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_active.svg',
+            activeImg: null,
             inActiveImg: null,
             boxBg: '#fff',
             iconColor: '#fff',
@@ -37,7 +36,7 @@ const WhatWeDo = () => {
         },
         {
             id: 3,
-            activeImg: 'https://starbpo.com.pk/wp-content/themes/finbuzz/assets/element/circle_active.svg',
+            activeImg: null,
             inActiveImg: null,
             boxBg: '#54527F',
             iconColor: '#fff',
