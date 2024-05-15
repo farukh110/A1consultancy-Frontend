@@ -1,12 +1,10 @@
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Header from './components/layouts/header/Header';
 import Footer from './components/layouts/footer/Footer';
-import Web from './pages/web-development/Web';
 import Digital from './pages/digital-marketing/Digital';
 import ContactCenter from './pages/contact-center/ContactCenter';
-import BackOffice from './pages/back-office/BackOffice';
-import VideoMonitoring from './pages/video-monitoring/VideoMonitoring';
 import InboundCalls from './pages/inbound-calls/InboundCalls';
 import OutboundCalls from './pages/outbound-calls/OutboundCalls';
 import LeadGeneration from './pages/lead-generation/LeadGeneration';
@@ -14,8 +12,21 @@ import Contact from './pages/contact/Contact';
 import Careers from './pages/careers/Careers';
 import AboutUs from './pages/about/AboutUs';
 import TawkMessenger from '@tawk.to/tawk-messenger-react';
+import ReactGA from 'react-ga';
 
 const App = () => {
+
+  useEffect(() => {
+
+    ReactGA.initialize('G-N1GT63KV46');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
+    const unlisten = ReactGA.pageview(window.location.pathname + window.location.search);
+
+    return unlisten;
+
+  }, []);
+
   return (
     <Router>
       <div>
@@ -38,7 +49,7 @@ const App = () => {
         />
       </div>
     </Router>
-  )
+  );
 }
 
 export default App;
