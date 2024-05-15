@@ -18,7 +18,7 @@ const App = () => {
 
   useEffect(() => {
 
-    ReactGA.initialize('G-N1GT63KV46');
+    ReactGA.initialize('G-VYD0TR3HJ6');
     ReactGA.pageview(window.location.pathname + window.location.search);
 
     const unlisten = ReactGA.pageview(window.location.pathname + window.location.search);
