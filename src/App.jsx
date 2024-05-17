@@ -13,6 +13,7 @@ import Careers from './pages/careers/Careers';
 import AboutUs from './pages/about/AboutUs';
 import TawkMessenger from '@tawk.to/tawk-messenger-react';
 import ReactGA from 'react-ga';
+import NotFound from './pages/404/404';
 
 const App = () => {
 
@@ -41,6 +42,7 @@ const App = () => {
           <Route exact path="/contact-center-services" element={<ContactCenter />} />
           <Route exact path="/careers" element={<Careers />} />
           <Route exact path="/contact-us" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
         <TawkMessenger

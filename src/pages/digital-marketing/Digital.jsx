@@ -1,4 +1,3 @@
-import React from 'react';
 import Page from '../generic-page/Page';
 import banner from '../../assets/images/inner-services/digital-marketing.jpg';
 import { Helmet } from 'react-helmet-async';

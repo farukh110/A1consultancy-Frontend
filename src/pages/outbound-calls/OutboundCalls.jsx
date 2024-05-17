@@ -1,7 +1,6 @@
 import Banner from "../home/main-banner/Banner";
 import bannerImage from '../../assets/images/services/outbound-calls.jpg';
 import './index.scss';
-import ContactDetails from "../../components/contact-details/ContactDetails";
 import { Helmet } from "react-helmet-async";
 
 const OutboundCalls = () => {

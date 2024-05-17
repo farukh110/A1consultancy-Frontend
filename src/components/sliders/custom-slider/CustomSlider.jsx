@@ -40,9 +40,9 @@ const CustomSlider = () => {
     const animateSlideContent = () => {
         const slideContents = document.querySelectorAll('.swiper-slide-active .slide-content');
         slideContents.forEach((content) => {
-            content.querySelector('h2').classList.add('slideInH2');
-            content.querySelector('p').classList.add('slideInP');
-            content.querySelector('button').classList.add('slideInButton');
+            content.querySelector('h2')?.classList?.add('slideInH2');
+            content.querySelector('p')?.classList?.add('slideInP');
+            content.querySelector('button')?.classList?.add('slideInButton');
         });
     };
 
@@ -68,11 +68,11 @@ const CustomSlider = () => {
                 effect="fade"
             >
                 {content.map((slide, index) => (
-                    <SwiperSlide key={index} style={{ backgroundImage: `url(${slide.image})` }}>
+                    <SwiperSlide key={index} style={{ backgroundImage: `url(${slide?.image})` }}>
                         <div className="slide-content">
-                            <h1 dangerouslySetInnerHTML={{ __html: slide.title }}></h1>
-                            <p dangerouslySetInnerHTML={{ __html: slide.description }}></p>
-                            <button className='btn btn-primary'>{slide.button}</button>
+                            <h1 dangerouslySetInnerHTML={{ __html: slide?.title }}></h1>
+                            <p dangerouslySetInnerHTML={{ __html: slide?.description }}></p>
+                            <button className='btn btn-primary'>{slide?.button}</button>
                         </div>
                     </SwiperSlide>
                 ))}

@@ -1,8 +1,6 @@
 import Banner from "../home/main-banner/Banner";
 import bannerImage from '../../assets/images/services/lead-generation-2.jpg';
-import lead from '../../assets/images/services/lead.jpg';
 import './index.scss';
-import ContactDetails from "../../components/contact-details/ContactDetails";
 import { Helmet } from "react-helmet-async";
 
 const LeadGeneration = () => {
