@@ -12,13 +12,11 @@ const BlogDetail = () => {
 
     const params = useParams();
 
-    console.log('params: ', params);
+    // console.log('params: ', params);
 
     const [blogDetail, setBlogDetail] = useState({});
 
     const [loading, setLoading] = useState(true); // State to manage loading status
-
-
 
     useEffect(() => {
 
@@ -29,10 +27,10 @@ const BlogDetail = () => {
     const getBlogDetail = () => {
 
         setLoading(true);
-        axios.get(`${BACKEND_API}/blog/title/${params.title}`)
+        axios.get(`${BACKEND_API}/blog/title/${params?.title}`)
             .then((res) => {
-                console.log('blog detail: ', res.data.blog);
-                setBlogDetail(res.data.blog[0]); // Assuming there will always be one blog detail
+                // console.log('blog detail: ', res?.data?.blog);
+                setBlogDetail(res?.data?.blog[0]); // Assuming there will always be one blog detail
             })
             .catch((error) => {
                 console.log('error: ', error);
@@ -44,7 +42,7 @@ const BlogDetail = () => {
 
     return (
         <>
-            {blogDetail.title && (
+            {blogDetail?.title && (
                 <Helmet>
 
                     <title> {blogDetail.title} </title>
@@ -59,20 +57,22 @@ const BlogDetail = () => {
                     <meta property="og:image:width" content="180" />
                     <meta property="og:image:height" content="50" />
                     <meta property="og:type" content="website" />
-                    <meta property="og:title" content={blogDetail.title} />
+                    <meta property="og:title" content={blogDetail?.title} />
                     <meta property="og:description" content="Welcome to the A1Consultancy blog, where we provide insights, tips, and updates on contact center services, lead generation, and digital marketing strategies. Stay tuned for valuable information to help boost your business success." />
                     <meta property="og:url" content="https://a1-consultancy.com/" />
-                    <link rel="canonical" href={`/blog/${blogDetail.title}`} />
+                    <link rel="canonical" href={`/blog/${blogDetail?.title}`} />
 
                 </Helmet>
             )}
 
-            <Page
-                bannerImage={blogDetail.imageUrl}
-                mediumText={blogDetail.category}
-                mediumBelowText={blogDetail.title}
-                bannerContent={null}
-            />
+            <div className="page-wrapper" style={{ backgroundColor: loading ? 'black' : 'transparent' }}>
+                <Page
+                    bannerImage={blogDetail?.imageUrl}
+                    mediumText={blogDetail?.category}
+                    mediumBelowText={blogDetail?.title}
+                    bannerContent={null}
+                />
+            </div>
 
             <div className="container blog-list py-md-5 py-4">
                 {loading ? (
