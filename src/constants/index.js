@@ -1,2 +1,2 @@
 export const API_LINK = import.meta.env.VITE_API_URL;
-export const BACKEND_API = 'http://localhost:8080';
+export const BACKEND_API = 'https://a1consultancy-ap-is.vercel.app';
