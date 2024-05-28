@@ -1,9 +1,10 @@
-import { Card, Typography } from 'antd';
+import { Card, message, Spin, Typography } from 'antd';
 import { useEffect, useState } from 'react';
 import { getDownloadURL, getStorage, ref as storageRef, uploadBytes } from 'firebase/storage';
 import { app } from '../../firebase';
 import axios from 'axios';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { BACKEND_API } from '../../constants';
 
 const AddCategory = () => {
 
@@ -12,6 +13,7 @@ const AddCategory = () => {
     const [categoryName, setCategoryName] = useState('');
     const [file, setFile] = useState(null);
     const [imageUrl, setImageUrl] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -34,9 +36,29 @@ const AddCategory = () => {
         setImageUrl(URL.createObjectURL(e.target.files[0]));
     }
 
+    const validateAndSubmit = () => {
+        if (!categoryName.trim()) {
+            message.error('Please enter category name');
+            return false;
+        }
+
+        if (!file && !location.state) {
+            message.error('Please select an image for the category');
+            return false;
+        }
+
+        return true;
+    }
+
     const onAddCategory = async (e) => {
 
         e.preventDefault();
+
+        if (!validateAndSubmit()) {
+            return;
+        }
+
+        setLoading(true);
 
         console.log('categoryName: ', categoryName, 'file: ', file);
 
@@ -52,16 +74,18 @@ const AddCategory = () => {
 
             console.log('uploadedImageUrl: ', uploadedImageUrl);
 
-            axios.post('http://localhost:8000/category', {
+            axios.post(`${BACKEND_API}/category`, {
 
                 name: categoryName,
                 imageUrl: uploadedImageUrl
-            }, {
-                headers: {
+            },
+                {
+                    headers: {
 
-                    Authorization: `Bearer ${sessionStorage.getItem('token')}`
+                        Authorization: `Bearer ${sessionStorage.getItem('token')}`
+                    }
                 }
-            })
+            )
                 .then((res) => {
 
                     console.log('res: ', res.data);
@@ -72,21 +96,26 @@ const AddCategory = () => {
 
                     console.log('error: ', error);
                 })
+                .finally(() => {
+                    setLoading(false); // Set loading to false when the operation completes
+                });
 
         } else {
 
             if (file == null) {
 
-                axios.put(`http://localhost:8000/category/${location?.state?.record?._id}`, {
+                axios.put(`${BACKEND_API}/category/${location?.state?.record?._id}`, {
 
                     name: categoryName,
                     imageUrl: location?.state?.record?.imageUrl
-                }, {
-                    headers: {
+                },
+                    {
+                        headers: {
 
-                        Authorization: `Bearer ${sessionStorage.getItem('token')}`
+                            Authorization: `Bearer ${sessionStorage.getItem('token')}`
+                        }
                     }
-                })
+                )
                     .then((res) => {
 
                         console.log('res: ', res.data);
@@ -97,6 +126,9 @@ const AddCategory = () => {
 
                         console.log('error: ', error);
                     })
+                    .finally(() => {
+                        setLoading(false); // Set loading to false when the operation completes
+                    });
 
             } else {
 
@@ -110,16 +142,18 @@ const AddCategory = () => {
 
                 console.log('uploadedImageUrl: ', uploadedImageUrl);
 
-                axios.put(`http://localhost:8000/category/${location?.state?.record?._id}`, {
+                axios.put(`${BACKEND_API}/category/${location?.state?.record?._id}`, {
 
                     name: categoryName,
                     imageUrl: uploadedImageUrl
-                }, {
-                    headers: {
+                },
+                    {
+                        headers: {
 
-                        Authorization: `Bearer ${sessionStorage.getItem('token')}`
+                            Authorization: `Bearer ${sessionStorage.getItem('token')}`
+                        }
                     }
-                })
+                )
                     .then((res) => {
 
                         console.log('res: ', res.data);
@@ -130,6 +164,9 @@ const AddCategory = () => {
 
                         console.log('error: ', error);
                     })
+                    .finally(() => {
+                        setLoading(false); // Set loading to false when the operation completes
+                    });
             }
         }
 
@@ -137,7 +174,7 @@ const AddCategory = () => {
 
     return (
         <>
-            <Title level={3}>Add Category</Title>
+            <Title level={3}> {location.state == null ? 'Add Category' : 'Update Category'} </Title>
 
             <Card className='mt-md-4' bordered={false}>
 
@@ -170,7 +207,7 @@ const AddCategory = () => {
 
                             </div>
 
-                            <button className='btn btn-dark mt-md-3' type="submit"> Add Category </button>
+                            <button className='btn btn-dark mt-md-3' type="submit"> {loading ? <Spin /> : 'Submit'} </button>
 
                         </form>
 

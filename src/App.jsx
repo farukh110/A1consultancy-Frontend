@@ -24,6 +24,8 @@ import CategoryList from './admin/category/CategoryList';
 import AddCategory from './admin/category/AddCategory';
 import CommentList from './admin/comment/CommentList';
 import ProtectedRoute from './protected-routes/ProtectedRoute';
+import Blogs from './pages/blogs/Blogs';
+import BlogDetail from './pages/blog-detail/BlogDetail';
 
 const App = () => {
   const location = useLocation();
@@ -62,6 +64,8 @@ const App = () => {
         <Route exact path="/contact-center-services" element={<ContactCenter />} />
         <Route exact path="/careers" element={<Careers />} />
         <Route exact path="/contact-us" element={<Contact />} />
+        <Route exact path="/blogs" element={<Blogs />} />
+        <Route exact path="/blog/:title" element={<BlogDetail />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="login" element={<AdminLogin />} />

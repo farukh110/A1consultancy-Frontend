@@ -3,7 +3,8 @@ import './login.scss';
 import logo from '../../assets/logo/a1-logo1.png';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { message } from 'antd';
+import { message, Spin } from 'antd';
+import { BACKEND_API } from '../../constants';
 
 const AdminLogin = () => {
     const [userName, setUserName] = useState('');
@@ -22,7 +23,7 @@ const AdminLogin = () => {
         }
 
         setLoading(true);
-        axios.post('http://localhost:8000/auth/admin/login', {
+        axios.post(`${BACKEND_API}/auth/admin/login`, {
             userName,
             password
         })
@@ -72,7 +73,7 @@ const AdminLogin = () => {
                                             placeholder='Password'
                                         />
                                         <button type='submit' className='btn btn-dark' disabled={loading}>
-                                            {loading ? 'Logging in...' : 'Login'}
+                                            {loading ? <Spin /> : 'Login'}
                                         </button>
                                     </form>
                                 </div>

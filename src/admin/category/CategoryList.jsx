@@ -5,6 +5,7 @@ import './index.scss';
 import { deleteObject, getStorage, ref as storageRef } from "firebase/storage";
 import { app } from '../../firebase';
 import { useNavigate } from "react-router-dom";
+import { BACKEND_API } from "../../constants";
 
 const CategoryList = () => {
 
@@ -21,7 +22,8 @@ const CategoryList = () => {
     }, []);
 
     const getCategory = () => {
-        axios.get('http://localhost:8000/category')
+        setLoading(true);
+        axios.get(`${BACKEND_API}/category`)
             .then((res) => {
                 console.log('category res: ', res.data.category);
                 setCategories(res.data.category);
@@ -29,6 +31,9 @@ const CategoryList = () => {
             .catch((error) => {
                 console.log('error: ', error);
                 message.error('Failed to load categories');
+            })
+            .finally(() => {
+                setLoading(false);
             });
     };
 
@@ -41,7 +46,7 @@ const CategoryList = () => {
     const handleDelete = (record) => {
 
         console.log('Delete record ID: ', record._id);
-        setLoading(true);
+        // setLoading(true);
         setDeletingId(record._id);
 
         const storage = getStorage(app);
@@ -51,12 +56,14 @@ const CategoryList = () => {
 
         deleteObject(storage_ref)
             .then(() => {
-                return axios.delete(`http://localhost:8000/category/${record._id}`, {
-                    headers: {
+                return axios.delete(`${BACKEND_API}/category/${record._id}`,
+                    {
+                        headers: {
 
-                        Authorization: `Bearer ${sessionStorage.getItem('token')}`
+                            Authorization: `Bearer ${sessionStorage.getItem('token')}`
+                        }
                     }
-                });
+                );
             })
             .then((res) => {
                 console.log('deleted res: ', res);
@@ -68,7 +75,7 @@ const CategoryList = () => {
                 message.error('Failed to delete category');
             })
             .finally(() => {
-                setLoading(false);
+                // setLoading(false);
                 setDeletingId(null);
             });
     };
@@ -120,6 +127,7 @@ const CategoryList = () => {
                     columns={columns}
                     rowKey="_id"
                     bordered
+                    loading={loading}
                 />
             </Card>
         </>

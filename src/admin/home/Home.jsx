@@ -1,8 +1,10 @@
+import BlogList from "../blog/BlogList";
+
 const DashboardHome = () => {
     return (
-        <div>
-            Home
-        </div>
+        <>
+            <BlogList />
+        </>
     )
 }
 

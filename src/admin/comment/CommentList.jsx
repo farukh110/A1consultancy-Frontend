@@ -4,6 +4,7 @@ import axios from "axios";
 import './index.scss';
 import { deleteObject, getStorage, ref as storageRef } from "firebase/storage";
 import { app } from '../../firebase';
+import { BACKEND_API } from "../../constants";
 
 const CommentList = () => {
 
@@ -17,7 +18,7 @@ const CommentList = () => {
     }, []);
 
     const getComments = () => {
-        axios.get('http://localhost:8000/comment')
+        axios.get(`${BACKEND_API}/comment`)
             .then((res) => {
                 console.log('comments res: ', res.data.comments);
                 setComments(res.data.comments);
@@ -34,7 +35,7 @@ const CommentList = () => {
         setLoading(true);
         setDeletingId(record._id);
 
-        axios.delete(`http://localhost:8000/comment/${record._id}`, {
+        axios.delete(`${BACKEND_API}/comment/${record._id}`, {
             headers: {
 
                 Authorization: `Bearer ${sessionStorage.getItem('token')}`

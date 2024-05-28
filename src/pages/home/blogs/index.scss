@@ -1,0 +1,27 @@
+.blog_section h1 {
+    color: #2D2BAE;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.blog_section .blog_container {
+    border-radius: 10px;
+    box-shadow: 0 49px 94px 6px rgba(221, 222, 234, 0.5);
+    margin-top: 50px;
+}
+
+.blog_section {
+
+    .blog_container2 {
+        border-radius: 10px;
+        box-shadow: 0 0px 15px 6px rgba(221, 222, 234, 0.5);
+
+        img {
+            height: 270px;
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+}

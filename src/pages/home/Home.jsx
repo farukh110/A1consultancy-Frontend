@@ -3,6 +3,7 @@ import WhatWeDo from './what-we-do/WhatWeDo';
 import BpoServices from './bpo-services/BpoServices';
 import CustomSlider from '../../components/sliders/custom-slider/CustomSlider';
 import { Helmet } from 'react-helmet-async';
+import LatestBlogs from './blogs/LatestBlogs';
 
 
 const Home = () => {
@@ -35,6 +36,7 @@ const Home = () => {
             <BpoServices />
             {/* <Events /> */}
             <ContactForm />
+            <LatestBlogs />
         </>
     )
 }

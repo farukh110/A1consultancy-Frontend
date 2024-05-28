@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import './index.scss';
 import DOMPurify from 'dompurify';
 import { parse, HTMLElement } from 'node-html-parser';
+import { BACKEND_API } from "../../constants";
 
 const BlogList = () => {
 
@@ -24,14 +25,18 @@ const BlogList = () => {
     }, []);
 
     const getBlogs = () => {
-        axios.get('http://localhost:8000/blog')
+        setLoading(true);
+        axios.get(`${BACKEND_API}/blog`)
             .then((res) => {
                 console.log('blog res: ', res.data.blog);
                 setBlogs(res.data.blog.reverse());
             })
             .catch((error) => {
                 console.log('error: ', error);
-                message.error('Failed to load categories');
+                message.error('Failed to load blogs');
+            })
+            .finally(() => {
+                setLoading(false);
             });
     };
 
@@ -44,7 +49,7 @@ const BlogList = () => {
     const handleDelete = (record) => {
 
         console.log('Delete record ID: ', record._id);
-        setLoading(true);
+        // setLoading(true);
         setDeletingId(record._id);
 
         const storage = getStorage(app);
@@ -54,12 +59,14 @@ const BlogList = () => {
 
         deleteObject(storage_ref)
             .then(() => {
-                return axios.delete(`http://localhost:8000/blog/${record._id}`, {
-                    headers: {
+                return axios.delete(`${BACKEND_API}/blog/${record._id}`,
+                    {
+                        headers: {
 
-                        Authorization: `Bearer ${sessionStorage.getItem('token')}`
+                            Authorization: `Bearer ${sessionStorage.getItem('token')}`
+                        }
                     }
-                });
+                );
             })
             .then((res) => {
                 console.log('deleted res: ', res);
@@ -71,7 +78,7 @@ const BlogList = () => {
                 message.error('Failed to delete category');
             })
             .finally(() => {
-                setLoading(false);
+                // setLoading(false);
                 setDeletingId(null);
             });
     };
@@ -117,14 +124,14 @@ const BlogList = () => {
             dataIndex: 'category',
             key: 'category',
         },
-        {
-            title: 'Description',
-            dataIndex: 'description',
-            key: 'description',
-            render: (text) => (
-                <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(shortenHTML(text, 100)) }} />
-            ),
-        },
+        // {
+        //     title: 'Description',
+        //     dataIndex: 'description',
+        //     key: 'description',
+        //     render: (text) => (
+        //         <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(shortenHTML(text, 100)) }} />
+        //     ),
+        // },
         {
             title: 'Image',
             dataIndex: 'imageUrl',
@@ -166,6 +173,7 @@ const BlogList = () => {
                     columns={columns}
                     rowKey="_id"
                     bordered
+                    loading={loading}
                 />
             </Card>
         </>

@@ -1,11 +1,11 @@
 import React from 'react';
 import './dashboard.scss';
 import logo from '../../assets/logo/a1-logo1.png';
-import { UploadOutlined, UserOutlined, VideoCameraOutlined, DashboardOutlined, FileAddOutlined, FileTextOutlined, TagsOutlined, LogoutOutlined } from '@ant-design/icons';
+import { MessageOutlined, UnorderedListOutlined, AppstoreAddOutlined, DashboardOutlined, FileAddOutlined, FileTextOutlined, LogoutOutlined } from '@ant-design/icons';
 import { Layout, Menu } from 'antd';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Sider } = Layout;
 
 const Dashboard = () => {
 
@@ -25,27 +25,27 @@ const Dashboard = () => {
         },
         {
             key: '2',
-            icon: React.createElement(FileTextOutlined),
-            label: <Link className='text-decoration-none' to="/admin/dashboard/blogs">Blog List</Link>,
-        },
-        {
-            key: '3',
             icon: React.createElement(FileAddOutlined),
             label: <Link className='text-decoration-none' to="/admin/dashboard/add-blog">Add Blog</Link>,
         },
         {
-            key: '4',
-            icon: React.createElement(TagsOutlined),
-            label: <Link className='text-decoration-none' to="/admin/dashboard/categories">Category List</Link>,
+            key: '3',
+            icon: React.createElement(FileTextOutlined),
+            label: <Link className='text-decoration-none' to="/admin/dashboard/blogs">Blog List</Link>,
         },
         {
-            key: '5',
-            icon: React.createElement(UploadOutlined),
+            key: '4',
+            icon: React.createElement(AppstoreAddOutlined),
             label: <Link className='text-decoration-none' to="/admin/dashboard/add-category">Add Category</Link>,
         },
         {
+            key: '5',
+            icon: React.createElement(UnorderedListOutlined),
+            label: <Link className='text-decoration-none' to="/admin/dashboard/categories">Category List</Link>,
+        },
+        {
             key: '6',
-            icon: React.createElement(UploadOutlined),
+            icon: React.createElement(MessageOutlined),
             label: <Link className='text-decoration-none' to="/admin/dashboard/comments">Comments List </Link>,
         },
         {
