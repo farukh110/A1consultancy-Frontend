@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Page from '../generic-page/Page';
 import axios from 'axios';
-import blogsBg from '../../assets/images/blog/blogs.jpg';
+// import blogsBg from '../../assets/images/blog/blogs.jpg';
 import './index.scss';
 import { Skeleton } from 'antd';
 import { useParams } from 'react-router-dom';
+import { BACKEND_API } from '../../constants';
 
 const BlogDetail = () => {
 
@@ -28,7 +29,7 @@ const BlogDetail = () => {
     const getBlogDetail = () => {
 
         setLoading(true);
-        axios.get(`http://localhost:8000/blog/title/${params.title}`)
+        axios.get(`${BACKEND_API}/blog/title/${params.title}`)
             .then((res) => {
                 console.log('blog detail: ', res.data.blog);
                 setBlogDetail(res.data.blog[0]); // Assuming there will always be one blog detail
